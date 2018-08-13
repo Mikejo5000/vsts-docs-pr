@@ -1,6 +1,6 @@
 ---
-title: Track test status - manual testing in VSTS
-description: Track test status with charts and graphs using VSTS
+title: Track test status - manual testing in Azure DevOps
+description: Track test status with charts and graphs using Azure DevOps
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.prod: devops
 ms.technology: devops-test
@@ -13,8 +13,6 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Track test status
-
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
@@ -117,7 +115,7 @@ Use test case charts to find out the progress of your
 test case authoring. The charts for test cases give 
 you the flexibility to report on columns that you add 
 to the Tests tab. By default, test case fields are not 
-added to the view in the Tests tab.
+added to the view in the tests page.
 
 If you already know how to add a chart, jump to the
 [examples](#ExamplesTestCase) below of charts that you can 
@@ -129,9 +127,9 @@ create for test cases.
    your test case charts.
 
 1. Select the test plan or test suite for your chart in 
-   the Test plan tab. Then add a test case chart.
+   the Test plans tab. Then add a test case chart.
 
-   ![Test hub: select test suite; Charts tab; New test case chart](_img/track-test-status/NewTestCaseChart.png)
+   ![Select test suite; Charts tab; New test case chart](_img/track-test-status/NewTestCaseChart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
@@ -197,7 +195,7 @@ Stakeholder access can view the charts on the dashboard.
 Learn more about
 [dashboards](../report/dashboards.md). 
 Or learn more about
-[team administration](../work/scale/manage-team-assets.md).
+[team administration](../organizations/settings/configure-team-settings.md).
 
 ## See also
 

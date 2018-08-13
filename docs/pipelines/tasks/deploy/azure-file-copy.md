@@ -1,6 +1,6 @@
 ---
-title: VSTS and Team Foundation Server Build and Deploy - Azure File Copy
-description: VSTS and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
+title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure File Copy
+description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -42,7 +42,7 @@ contain virtual machines, use the
 has a sample template that can perform the required
 operations to set up the WinRM HTTPS
 protocol on the virtual machines, open the 5986 port 
-in the firewall, and install the test certificate. 
+in the firewall, and install the test certificate.
 
 ## Demands
 
@@ -60,20 +60,20 @@ None
 | **Source** | Required. The source of the files to copy. Pre-defined system variables such as ``` $(Build.Repository.LocalPath)``` can be used. Names containing wildcards such as ```*.zip``` are not supported. |
 | **Azure Connection Type** | Required. Select the type of service connection used to define the connection to Azure. Choose **Azure Classic** or **Azure Resource Manager**. |
 | **Azure Classic Subscription** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic) configured for the subscription where the target Azure service, virtual machine, or storage account is located. |
-| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service connection](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/) for more details. |
+| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service connection](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/documentation/articles/resource-group-overview/) for more details. |
 | **Destination Type** | Required. The type of target destination for the files. Choose **Azure Blob** or **Azure VMs**. |
 | **Classic Storage Account** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an existing storage account within the Azure subscription. |
 | **RM Storage Account** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an existing storage account within the Azure subscription. |
 | **Container Name** | Required if you select **Azure Blob** for the **Destination Type** parameter. The name of the container to which the files will be copied. If a container with this name does not exist, a new one will be created. |
 | **Blob Prefix** | Optional if you select **Azure Blob** for the **Destination Type** parameter. A prefix for the blob names, which can be used to filter the blobs. For example, using the build number enables easy filtering when downloading all blobs with the same build number. |
-| **Cloud Service** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. The name of the Azure cloud service in which the virtual machines run. |
+| **Cloud Service** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. The name of the Azure Cloud Service in which the virtual machines run. |
 | **Resource Group** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. The name of the Azure Resource Group in which the virtual machines run. |
 | **Select Machines By** | Depending on how you want to specify the machines in the group when using the **Filter Criteria** parameter, choose **Machine Names** or **Tags**. |
-| **Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}**:**{Value} Example: `Role:DB;OS:Win8.1` |
+| **Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}**:**{Value} Example: `Role:DB;OS:Win8.1` |
 | **Admin Login** | Required if you select **Azure VMs** for the **Destination Type** parameter. The user name of an account that has administrative permissions for all the target VMs.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
 | **Password** | Required if you select **Azure VMs** for the **Destination Type** parameter. The password for the account specified as the **Admin Login** parameter. Use the padlock icon for a variable defined in the **Variables** tab to protect the value, and insert the variable name here. |
 | **Destination Folder** | Required if you select **Azure VMs** for the **Destination Type** parameter. The folder in the Azure VMs to which the files will be copied. Environment variables such as `$env:windir` and `$env:systemroot` are supported. Examples: ` $env:windir\FabrikamFiber\Web` and `c:\FabrikamFiber` |
-| **Additional Arguments** | Optional. Any arguments you want to pass to the **AzCopy.exe** program for use when uploading to the blob and downloading to the VMs. See [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) for more details. If you are using a Premium storage account, which supports only Azure page blobs, the pass `/BlobType:Page` as an additional argument. |
+| **Additional Arguments** | Optional. Any arguments you want to pass to the **AzCopy.exe** program for use when uploading to the blob and downloading to the VMs. See [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) for more details. If you are using a Premium storage account, which supports only Azure page blobs, the pass `/BlobType:Page` as an additional argument. |
 | **Enable Copy Prerequisites** | Available if you select **Azure Resource Manager** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. Setting this option configures the Windows Remote Management (WinRM) listener over HTTPS protocol on port 5986, using a self-signed certificate. This configuration is required for performing copy operation on Azure virtual machines.<br />- If the target virtual machines are accessed through a load balancer, ensure an inbound NAT rule is configured to allow access on port 5986.<br />- If the target virtual machines are associated with a Network Security Group (NSG), configure an inbound security rule to allow access on port 5986. |
 | **Copy in Parallel** | Available if you select **Azure VMs** for the **Destination Type** parameter. Setting this option causes the process to execute in parallel for the copied files. This can considerably reduce the overall time taken. |
 | **Clean Target** | Available if you select **Azure VMs** for the **Destination Type** parameter. Setting this option causes all of the files in the destination folder to be deleted before the copy process starts. |
@@ -107,7 +107,7 @@ to obtain this.
 #### What are the WinRM prerequisites for this task?
 
 The task uses Windows Remote Management (WinRM) HTTPS protocol to
-copy the files from the storage blob container to the Azure VMs. 
+copy the files from the storage blob container to the Azure VMs.
 This requires the WinRM HTTPS service to be configured on the VMs,
 and a suitable certificate installed.
 
@@ -115,9 +115,9 @@ If the VMs have been created without opening the
 WinRM HTTPS ports, follow these steps:
 
 1. Configure an inbound access rule to allow HTTPS on port 5986 of each VM.
-1. Disable [UAC remote restrictions](https://support.microsoft.com/en-us/kb/951016).
+1. Disable [UAC remote restrictions](https://support.microsoft.com/kb/951016).
 1. Specify the credentials for the task to access the VMs using an administrator-level login in the simple form **username** without any domain part.
-1. Install a certificate on the machine that runs the automation agent. 
+1. Install a certificate on the machine that runs the automation agent.
 1. Set the **Test Certificate** parameter of the task if you are using a self-signed certificate.
 
 For more details, see [this blog post](http://blogs.msdn.com/b/muthus_blog/archive/2015/11/04/pre-requisites-for-using-azure-vms-in-winrm-based-tasks-in-build-and-rm-workflows.aspx).
@@ -139,10 +139,10 @@ and browse for **Storage accounts (Classic)** or
 
 
 * For Azure classic resources, use an **Azure** service connection
-  type with certificate or credentials-based authentication. 
+  type with certificate or credentials-based authentication.
   If you are using credentials-based authentication, 
   ensure that the credentials are for a 
-  [school or work account](https://azure.microsoft.com/en-in/pricing/member-offers/msdn-benefits-details/work-accounts-faq/).
+  [school or work account](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/work-accounts-faq/).
   Microsoft accounts such as **joe@live.com** and 
   **joe@hotmail.com** are not supported.
   
@@ -165,7 +165,7 @@ and browse for **Storage accounts (Classic)** or
 
 If the specified Resource Group contains both 
 Azure Resource Manager and Classic VMs, the set of VMs that 
-will be targeted depends on the connection type. 
+will be targeted depends on the connection type.
 For certificate-based connections and credentials-based
 connections, the copy operation will be performed 
 only on Classic VMs. For Service Principal Name 

@@ -1,6 +1,6 @@
 ---
 title: File transforms and variable substitution
-description: File transforms and variable substitution for tasks in Viosual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: File transforms and variable substitution for tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: devops
 ms.technology: devops-cicd
@@ -37,7 +37,7 @@ the **parameters.xml** file to substitute values in the **web.config** file.
 ## XML Transformation
 
 XML transformation supports transforming the configuration files (`*.config` files)
-by following [Web.config Transformation Syntax](https://msdn.microsoft.com/en-us/library/dd465326.aspx)
+by following [Web.config Transformation Syntax](https://msdn.microsoft.com/library/dd465326.aspx)
 and is based on the environment to which the web package will be deployed.
 This option is useful when you want to add, remove or modify configurations for different environments.
 Transformation will be applied for other configuration files including Console or Windows service application
@@ -114,11 +114,11 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
    * It modifies value of `Webpages:Enabled`  inside the `appSettings` element.
    * It removes the `debug` attribute from the `compilation` element inside the `System.Web` element.
 
-   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/en-us/library/dd465326.aspx)
+   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
 
 1. Create a release pipeline with an environment named **Release**.
  
-1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option. 
+1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
    ![Release pipeline for XML transformation](_img/release-definition2.png)
  
@@ -220,7 +220,7 @@ As an example, consider the task of changing the following values in `Web.config
 
 1. Create a release pipeline with an environment named **Release**.
  
-1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option. 
+1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
    ![Release pipeline for XML variable substitution](_img/release-definition.png)
 
@@ -283,7 +283,7 @@ It overrides the values in the specified JSON configuration files
 and environment variables.
 
 To substitute variables in specific JSON files, provide newline-separated
-list of JSON files. File names must be specified relative to the root folder. 
+list of JSON files. File names must be specified relative to the root folder.
 For example, if your package has this structure:
 
 ```Folders
@@ -335,13 +335,13 @@ As an example, consider the task of overriding values in this JSON file:
 <p />
 
 The task is to override the values of **ConnectionString**, **DebugMode**,
-the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy. 
+the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
 1. Create a release pipeline with an environment named **Release**.
  
 1. Add an **Azure App Service Deploy** task and enter a newline-separated
-   list of JSON files to substitute the variable values in the **JSON variable substitution** textbox. 
-   Files names must be relative to the root folder. 
+   list of JSON files to substitute the variable values in the **JSON variable substitution** textbox.
+   Files names must be relative to the root folder.
    You can use wildcards to search for JSON files. For example:
    `**/*.json` means substitute values in all the JSON files within the package.
 

@@ -1,6 +1,6 @@
 ---
-title: VSTS and TFS Build and Test - Cloud-based Load Test task
-description: Runs the load test in cloud with a build or release pipeline with VSTS to integrate cloud-based load tests into your build and release pipelines
+title: Azure Pipelines and TFS Build and Test - Cloud-based Load Test task
+description: Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,15 +21,15 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 ![icon](_img/cloud-based-load-test-icon.png)
-Runs a load test in the cloud with VSTS.
+Runs a load test in the cloud with Azure Pipelines.
 
 Use this task to understand, test, and validate your app's 
 performance. The task can be used in a build or release 
 pipeline to trigger a load test by using the 
-VSTS Cloud-based Load Test Service.
+Azure Pipelines Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
-performance by generating load on it. 
+performance by generating load on it.
 
 ## Demands
 
@@ -47,7 +47,7 @@ The build agent must have the following capabilities:
 
 | Argument | Description |
 | -------- | ----------- |
-| **VSTS connection** | The name of a Generic service connection that references the VSTS organization you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the VSTS organization where the load test will run.<br />- Optional for builds and releases on VSTS. In this case, if not provided, the current VSTS connection is used.<br />- See [Generic service connection](../../library/service-endpoints.md). |
+| **Azure Pipelines connection** | The name of a Generic service connection that references the Azure DevOps organization you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the Azure DevOps organization where the load test will run.<br />- Optional for builds and releases on Azure Pipelines. In this case, if not provided, the current Azure Pipelines connection is used.<br />- See [Generic service connection](../../library/service-endpoints.md). |
 | **Test settings file** | Required. The path relative to the repository root of the test settings file that specifies the files and data required for the load test such as the test settings, any deployment items, and setup/clean-up scripts. The task will search this path and any subfolders. |
 | **Load test files folder** | Required. The path of the load test project. The task looks here for the files required for the load test, such as the load test file, any deployment items, and setup/clean-up scripts. The task will search this path and any subfolders. |
 | **Load test file** | Required. The name of the load test file (such as **myfile.loadtest**) to be executed as part of this task. This allows you to have more than one load test file and choose the one to execute based on the deployment environment or other factors. |
@@ -89,7 +89,7 @@ Use the **Number of permissible threshold violations**
 setting if your load test is not already configured 
 with information about how many violations will cause
 a failure to be reported. For more details, see: 
-[How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](https://msdn.microsoft.com/en-us/library/ff426917.aspx).
+[How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](https://msdn.microsoft.com/library/ff426917.aspx).
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 

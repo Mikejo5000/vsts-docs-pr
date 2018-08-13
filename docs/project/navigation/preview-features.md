@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per VSTS organization](#account-level)|  
 > |-------------|----------|  
-> |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
+> |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
 
 
 <a id="user-level">  </a>
@@ -76,20 +76,20 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 ## Features now enabled for all VSTS projects 
 - [Approval gates in releases](../../pipelines/release/approvals/index.md)  
-- [Combine email recipients](../../notifications/manage-team-notifications.md) 
+- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)  
-- [New Queries Experience](../../work/track/view-run-query.md)   
+- [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md) 
-- [New Test Plan Experience](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>
-- [New Work Items Hub](../../work/work-items/view-add-work-items.md)   
+- [New Test Plan Experience](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>
+- [New Work Items Hub](../../boards/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
-- [Out of the box notifications](../../notifications/manage-personal-notifications.md).   
+- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md).   
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 - [Symbol server](../../pipelines/symbols/index.md)  
 - [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers) 
-- [Team expansion for notifications](../../notifications/manage-team-notifications.md)
+- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
 - [Updated package experience](../../package/index.md) 
 - [Wiki](../wiki/add-edit-wiki.md)  
 
@@ -105,14 +105,14 @@ With out-of-the-box notifications, users automatically receive notifications for
 * The user has a pull request that is updated  
 * The user has a build that completes  
 
-These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](../../notifications/manage-personal-notifications.md). 
+These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). 
 
 
 
 <a id="team-expansion-notifications">  </a>
 ## Team expansion for notifications 
 
-Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](../../notifications/manage-team-notifications.md).  
+Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](../../notifications/howto-manage-team-notifications.md).  
  
 
 <a id="task-tool-installers">  </a>

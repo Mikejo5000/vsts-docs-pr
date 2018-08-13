@@ -1,6 +1,6 @@
 ---
 title: FAQs and problem solutions for manual testing   
-description: FAQs for manual testing topics for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: FAQs for manual testing topics for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
@@ -13,8 +13,6 @@ monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for manual testing
-
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -33,7 +31,7 @@ monikerRange: '>= tfs-2015'
 
 ![Delete a test plan](_img/create-a-test-plan/delete-test-plan.png)
 
-See also [Delete test artifacts](../work/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
 
 ### Q: Can I group and reorder my requirement-based test suites together?
 
@@ -51,10 +49,10 @@ Drag and drop tests to reorder them.
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
 
-### Q: Can I edit other properties of a test plan from the test hub?
+### Q: Can I edit other properties of a test plan?
 
 **A:** You can only do this from Microsoft Test Manager (MTM). If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the Test hub. 
+Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 (The most recently installed version of MTM is launched.)
 
 ![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
@@ -84,7 +82,7 @@ into a Word document, if you want. All the formatting in the report is retained.
 **A:** You can only do this if you are using an on-premises Team Foundation Server. 
 You can [edit the XSLT file](https://msdn.microsoft.com/library/dd380763.aspx#XSLT).
 
-### Q: Can I track changes to test plans and test suites that I create with VSTS?
+### Q: Can I track changes to test plans and test suites that I create with Azure DevOps?
 
 **A:** Yes, you can track changes to test plans and test suites. Open the work item 
 for the test plan or test suite, then view the work item history.
@@ -113,7 +111,7 @@ Or permanently delete it.
 
 ![Delete a test case](_img/create-test-cases/delete-test-case.png)
 
-See also [Delete test artifacts](../work/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
 
 ### Q: Can I add an extra line to a test step?
 
@@ -212,13 +210,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from the Test hub. 
+Then you can filter on that tag from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In Test hub, on the Test Plan tab, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plan tab, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -282,8 +280,8 @@ longer linked to the backlog item for that test suite.
 ### Q: Why do I see the wrong test suite and tests when I click 'View Tests' from the notification email about tests that are assigned to me?
 
 **A:** This might happen if you were prompted to enter sign-in 
-credentials for VSTS when you clicked this link. 
-Without signing out of VSTS, click 'View Tests' 
+credentials for Azure DevOps when you clicked this link. 
+Without signing out of Azure DevOps, click 'View Tests' 
 again to see the correct test suite and tests.
 
 *****
@@ -322,7 +320,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for VSTS. 
+**A:** Yes, if you have the Test Manager for Azure DevOps. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
@@ -442,11 +440,11 @@ your grid back into Excel if you need to.
 ### Q: What are the default retention limits?
 
 **A**: For projects created before October 2015, 
-VSTS doesn't delete results from automated tests 
+Azure DevOps doesn't delete results from automated tests 
 and manual tests unless you change the retention limit. 
 
 For new projects created after October 2015, 
-VSTS deletes all test results after one year (365 days),
+Azure DevOps deletes all test results after one year (365 days),
 unless you chose to indefinitely retain a build associated with those results. 
 
 ### Q: What is the default test retention policy for XAML builds?

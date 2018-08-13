@@ -22,7 +22,7 @@ ms.date: 05/31/2018
 
 <a id=" inherited "> </a> 
 
-To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the account. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
+To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
@@ -35,17 +35,17 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 You'll see two types of processes:
 
-- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../../work/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
+- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
 - ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process will automatically update your inherited process. 
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
 
 Once you've created an inherited process, you can customize it, create projects based on it, make a copy of it, and change existing projects to use it. 
 
-For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* account. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyAgile* process (which inherits from the *Agile* system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* project. You can't customize the *Scrum Project*, on the other hand, until you change it to a process which inherits from Scrum.
+For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyAgile* process (which inherits from the *Agile* system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* project. You can't customize the *Scrum Project*, on the other hand, until you change it to a process which inherits from Scrum.
 
 > [!div class="mx-imgBorder"]  
-> ![Admin context, Account settings, Overview, Project list and the process they use](_img/process/mprocess-overview-project-list.png)
+> ![Admin context, Organization settings, Overview, Project list and the process they use](_img/process/mprocess-overview-project-list.png)
 
 
 <a id="process-naming"></a>
@@ -59,7 +59,7 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 Each inherited process you create inherits the WITs defined in the system process&mdash;Agile, Scrum, or CMMI. For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
 
-![Agile work item types](../../../work/work-items/guidance/_img/ALM_PT_Agile_WIT_Artifacts.png)
+![Agile work item types](../../../boards/work-items/guidance/_img/ALM_PT_Agile_WIT_Artifacts.png)
 
 You can add fields and modify the workflow and work item form for all inherited WITs that display on the **Work Item Types** page. If you don't want users to create a WIT, you can disable it. In addition, you can add custom WITs. 
 
@@ -87,10 +87,10 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 - With regards to picklists, you currently can't perform these operations:
 	- Change the picklist of an inherited field, such as the Activity or Discipline field  
 	- Change the picklist order, picklists display in alphabetic order
-- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../work/customize/reference/define-global-lists.md).  
+- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 > [!NOTE]    
-> With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../work/track/query-numeric.md), [Automation Status](../../../work/track/build-test-integration.md), [Discipline](../../../work/track/query-numeric.md), [Priority](../../../work/track/planning-ranking-priorities.md), plus others.  
+> With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
 
 
 ### Configurable picklists 
@@ -185,10 +185,10 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 ## Workflow customizations
 
-You can customize the workflow of any WIT by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
+You can customize the workflow of any WIT by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
 
 > [!NOTE]    
-> Before adding a workflow state, review [Workflow states and state categories](../../../work/customize/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
+> Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -230,7 +230,7 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 - You can't insert a backlog level within the existing set of defined backlogs
 - You can't reorder the backlog levels  
 - You can't create a custom task level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../../../work/customize/show-bugs-on-backlog.md).
+- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
 
 ### Fields added to WITs associated with a backlog level 
@@ -247,7 +247,7 @@ The Stack Rank and Backlog Priority fields capture the relative priority of work
 
 The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/velocity-chart-data-store.md).  
 
-And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../../work/scrum/define-sprints.md). 
+And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md). 
 
 ## Object limits
 

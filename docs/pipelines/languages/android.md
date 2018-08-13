@@ -8,35 +8,40 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 05/30/2018
+ms.date: 08/03/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Android
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guide explains creating pipelines for Android projects. Before this guidance, read the [designer quickstart](../get-started-designer.md) or [YAML quickstart](../get-started-yaml.md).
+::: moniker range="<= tfs-2018"
+> [!NOTE]
+> 
+> This guidance applies to Azure Pipelines.
+::: moniker-end
+
+This guide explains creating pipelines for Android projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+
+::: moniker range="vsts"
+> [!NOTE]
+> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
+::: moniker-end
 
 ## Get started
 
 You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-# [Designer](#tab/designer)
-
-Choose the **Android** template as you create a pipeline for your project. This will get you started with tasks to build, test, sign, and align an Android APK.
-
-# [YAML](#tab/yaml)
-
-Start by adding the following YAML to a file named **vsts-ci.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+Start by adding the following YAML to a file named **azure-pipelines.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 # https://aka.ms/yaml
-queue: 'Hosted VS2017'
+pool: 'Hosted VS2017'
 steps:
 - task: Gradle@2
   inputs:
@@ -44,8 +49,6 @@ steps:
     gradleOptions: '-Xmx2048m'
     tasks: 'assembleRelease'
 ```
-
----
 
 ## Sign and align an Android APK
 

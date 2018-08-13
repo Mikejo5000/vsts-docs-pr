@@ -1,6 +1,6 @@
 ---
-title: Conditional expressions | VSTS or Team Foundation Server
-description: Learn about how you can write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS).
+title: Conditional expressions | Azure Pipelines or Team Foundation Server
+description: Learn about how you can write custom conditions for running your task in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,14 +14,14 @@ monikerRange: '>= tfs-2017'
 
 # Specify conditions
 
-**VSTS | TFS 2018 | TFS 2017.3** 
+**Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release pipeline,
-you can specify the conditions under which the task or phase will run:
+Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
+you can specify the conditions under which the task or job will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
@@ -145,7 +145,7 @@ Otherwise =\> True
 
 ### Number to Version
 
-Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/en-us/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
+Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
 
 #### Number to String
 
@@ -167,7 +167,7 @@ Otherwise not convertible
 
 Empty string =\> 0
 
-Otherwise try-parse using [InvariantCulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx)  and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If try-parse fails, then not convertible.
+Otherwise try-parse using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx)  and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If try-parse fails, then not convertible.
 
 ### String to Version
 

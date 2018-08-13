@@ -14,16 +14,14 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory &amp; Manual Testing
  
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
+Azure DevOps and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
 See also: [Load testing](load-test/index.md)
 
 ## 5-Minute Quickstarts
 
-Learn how to create tests plans and test cases, and run them using the VSTS or TFS web portal.
+Learn how to create tests plans and test cases, and run them using the Azure DevOps or TFS web portal.
 Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
 
 | | | |
@@ -42,7 +40,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 ## Step-by-Step Tutorials
 
-* [Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Test from the Kanban board](../boards/boards/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
 
 ## How-to Guides
 
@@ -57,16 +55,16 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 ## Reference
 
 * [FAQs for manual testing](reference-qa.md)
-* [Unable to connect](../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Unable to connect](../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
 
 ## Resources
 
 * [Get Stakeholder feedback](../project/feedback/index.md)
 * [REST API for test management](../integrate/index.md)
 * [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/)
-* [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)
-* [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157%28v=vs.120%29.aspx)
+* [Test & Feedback posts](https://social.msdn.microsoft.com/Search/?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)
+* [Using Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx)
 * [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management)
 * [Load and performance testing](load-test/index.md)
 * [Continuous testing](../pipelines/index.md)
-* [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
+* [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)

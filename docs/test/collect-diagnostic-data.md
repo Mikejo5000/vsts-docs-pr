@@ -1,6 +1,6 @@
 ---
 title: Collect diagnostic data while testing your apps
-description: Manual and exploratory testing - collect diagnostic data while testing web and desktop apps with Team Services (VSTS) and Team Foundation Server (TFS)
+description: Manual and exploratory testing - collect diagnostic data while testing web and desktop apps with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.prod: devops
 ms.technology: devops-test
@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Collect diagnostic data while testing
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
 during the test. You can collect diagnostic data from
@@ -171,10 +169,10 @@ view it before you save the bug.
 At present you can collect only screen recordings and system 
 information when testing desktop apps using the web-based 
 Microsoft Test Runner. Instead, use 
-[Microsoft Test Manager client](https://visualstudio.microsoft.com/en-us/products/visual-studio-test-professional-with-msdn-vs.aspx)
+[Microsoft Test Manager client](https://visualstudio.microsoft.com/products/visual-studio-test-professional-with-msdn-vs.aspx)
 to collect additional diagnostic from desktop apps.
 
-1. In the Test hub in VSTS or TFS, 
+1. Open the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], 
    select a test case, test suite, or test plan to execute.
 
 1. Open the **Run** menu and choose **Run with options**.
@@ -212,7 +210,7 @@ tests using MTM. For more details, see
 
 > [!NOTE]
 > If you have an older version of Microsoft Test Manager, we recommend you upgrade to the latest version.
-> However, if you have Microsoft Test Manager 2015 or an earlier version installed, you can choose **Microsoft Test Runner 2015 and earlier** when you launch the test runner from Test hub using **Run with options**.
+> However, if you have Microsoft Test Manager 2015 or an earlier version installed, you can choose **Microsoft Test Runner 2015 and earlier** when you launch the test runner using **Run with options**.
 > You must [configure the data collectors](mtm/collect-more-diagnostic-data-in-manual-tests.md) and other run settings in Microsoft Test Manager (MTM) and specify these as the default settings for the test plan.
 > For more details, see [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
 

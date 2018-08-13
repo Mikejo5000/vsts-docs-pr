@@ -1,6 +1,6 @@
 ---
-title: PowerShell | VSTS or Team Foundation Server
-description: Learn about how you can execute powershell scripts when you are building your code in VSTS and Team Foundation Server TFS
+title: PowerShell | Azure Pipelines or Team Foundation Server
+description: Learn about how you can execute powershell scripts when you are building your code in Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -146,7 +146,7 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 
 ### ApplyVersionToAssemblies.ps1
 
-[Use a script to customize your build process](../../scripts/powershell.md)
+[Use a script to customize your build pipeline](../../scripts/powershell.md)
 
 ## Open source
 
@@ -158,9 +158,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/en-us/library/bb978526.aspx)
+[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
 
-[Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/en-us/scriptcenter/bb410849.aspx)
+[Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 
 [Windows PowerShell Tutorial](http://www.computerperformance.co.uk/powershell/index.htm)
 

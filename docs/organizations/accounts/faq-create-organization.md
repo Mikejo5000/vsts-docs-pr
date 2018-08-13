@@ -11,10 +11,10 @@ author: chcomley
 ms.date: 10/10/2017
 monikerRange: 'vsts'
 ---
-#	Troubleshoot creating a VSTS organization
 
-**VSTS**
+# Troubleshoot creating a VSTS organization
 
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="free-users"></a>
 
@@ -71,7 +71,7 @@ For example, [web-based test case management](https://marketplace.visualstudio.c
 requires that you install the Test Manager extension, 
 but you can [try paid extensions for free](../billing/try-additional-features-vs.md), 
 if you haven't started the extension trials already. 
-Otherwise, you can [pay for user access](/vsts/marketplace/install-vsts-extension) 
+Otherwise, you can [pay for user access](../../marketplace/install-vsts-extension.md)
 to these features.
 
 #### Q:	How many VSTS organizations can I create?

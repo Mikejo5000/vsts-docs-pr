@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 To connect and use the functions and features that VSTS and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
 
-In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
+In addition to permissions, access to specific features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md) for VSTS, and [Change access levels](change-access-levels.md) for TFS. 
 
@@ -63,14 +63,14 @@ You set [test permissions at the team project level](set-project-collection-leve
 
 ## Agile tools and work tracking
 
-You can connect to work items from the **Work** hub of the web portal and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../../work/backlogs/overview.md). Stakeholders have limited access to select work tracking functions as described in [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
+You can connect to work items from the **Work** hub of the web portal and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features and functions, see [About Agile tools](../../boards/backlogs/overview.md). Stakeholders have limited access to select work tracking functions as described in [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
-In addition to the permissions set at the [project level via the built-in groups](set-project-collection-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md), [queries and query folders](../../work/track/set-query-permissions.md), and [delivery plans](set-permissions-access-work-tracking.md#plan-permissions).  
+In addition to the permissions set at the [project level via the built-in groups](set-project-collection-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md), [queries and query folders](../../boards/queries/set-query-permissions.md), and [delivery plans](set-permissions-access-work-tracking.md#plan-permissions).  
 
-The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../../work/scale/add-team-administrator.md). 
+The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../../organizations/settings/add-team-administrator.md). 
 
 >[!NOTE]  
->There are no UI permissions associated with [managing tags](../../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
+>There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
 
 
 [!INCLUDE [temp](_shared/work.md)]
@@ -103,7 +103,7 @@ You set [permissions](../../report/analytics/analytics-security.md) for the serv
 
 ## Notifications, alerts, and team collaboration tools 
 
-To manage notifications, see [Manage personal notifications](../../notifications/manage-personal-notifications.md) and [Manage team notifications](../../notifications/manage-team-notifications.md).
+To manage notifications, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) and [Manage team notifications](../../notifications/howto-manage-team-notifications.md).
 
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).

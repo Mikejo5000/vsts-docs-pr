@@ -1,5 +1,5 @@
 ---
-title: Pipeline variables | VSTS or Team Foundation Server
+title: Pipeline variables | Azure Pipelines or Team Foundation Server
 description: Pipeline variables are name-value pairs defined by you or provided by Build or Release Management. You can use variables as inputs and in your scripts.
 ms.topic: reference
 ms.prod: devops
@@ -17,13 +17,13 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.
-As the name suggests, the contents of a variable may change from run to run or phase to phase of your pipeline.
+As the name suggests, the contents of a variable may change from run to run or job to job of your pipeline.
 Some variables are predefined by the system, and you are free to add your own as well.
 
 ## Working with variables
 
-Variables add a layer of indirection to your pipeline definition.
-Almost any place where a pipeline definition requires a text string or a number, you can use a variable instead of hard-coding a value.
+Variables add a layer of indirection to your pipeline.
+Almost any place where a pipeline requires a text string or a number, you can use a variable instead of hard-coding a value.
 The system will replace the variable with its current value during the pipeline's execution.
 
 Variable names consist of letters, numbers, `.`, and `_` characters.
@@ -56,15 +56,12 @@ For example, when you [create a new .NET app build](../apps/windows/dot-net.md),
 You are free to define additional variables in your pipelines.
 Both of these are considered user-defined variables.
 
-### Designer variables
+# [YAML](#tab/yaml)
 
-On the **Variables** tab in the pipeline designer, you can create, set, and delete variables.
-Variables defined here are available to all phases in the pipeline.
+::: moniker range="vsts"
 
-### YAML variables
-
-In addition to the **Variables** tab, YAML builds can have variables defined at the [phase](../process/phases.md) level.
-These variables can then be mapped into each task or script using the `inputs` keyword.
+YAML builds can have variables defined at the [job](../process/phases.md) level.
+They can also access variables defined when the build is queued.
 
 ```yaml
 # Set variables once
@@ -89,6 +86,161 @@ steps:
     platform: $(platform)
 ```
 
+### Parameters to YAML statements
+
+To use a variable in a YAML statement, wrap it in `$()`. For example:
+
+```yaml
+pool: Hosted Linux Preview
+steps:
+- script: ls
+  workingDirectory: $(agent.homeDirectory)
+```
+
+### Scripts
+
+To use a variables in a script, use environment variable syntax. Replace `.` and
+space with `_`, capitalize the letters, and then use your platform's syntax for
+referencing environment variables.
+
+```yaml
+jobs:
+- job: LinuxOrMacOs
+  pool: Hosted Linux Preview
+  steps:
+  - bash: echo $AGENT_HOMEDIRECTORY
+
+- job: Windows
+  pool: Hosted VS2017
+  steps:
+  - script: echo %AGENT_HOMEDIRECTORY%
+  - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
+```
+
+### Set a job-scoped variable from a script
+
+To set a variable from a script, you use a command syntax and print to stdout.
+This does not update the environment variables, but it does make the new
+variable available to downstream steps within the same job.
+
+```yaml
+pool: Hosted Linux Preview
+
+steps:
+
+# Create a variable
+- script: |
+    echo '##vso[task.setvariable variable=myVariable]abc123'
+
+# Print the variable
+- script: |
+    echo my variable is $(myVariable)
+```
+
+### Set an output (multi-job) variable
+
+If you want to make a variable available to future jobs, you must mark it as
+an output variable using `isOutput=true`. Then you can map it into future
+jobs using `$[]` syntax and including the step name which set the variable.
+
+```yaml
+jobs:
+
+# Set an output variable from job A
+- job: A
+  pool: Hosted VS2017
+  steps: 
+  - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
+    name: setvarStep
+  - script: echo $(setvarStep.myOutputVar)
+    name: echovar
+
+# Map the variable into job B
+- job: B
+  dependsOn: A
+  pool: Hosted Linux Preview
+  variables:
+    myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
+  steps:
+  - script: echo $(myVarFromJobA)
+    name: echovar
+```
+
+If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
+or [slice](phases.md?tab=yaml#slicing), then to reference the variable,
+you have to include the name
+of the job as well as the step when you access it from a downstream job.
+
+```yaml
+jobs:
+
+# Set an output variable from a job with a matrix
+- job: A
+  pool:
+    name: Hosted Linux Preview
+    parallel: 2
+    matrix:
+      debugJob:
+        configuration: debug
+        platform: x64
+      releaseJob:
+        configuration: release
+        platform: x64
+  steps:
+  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
+    name: setvarStep
+  - script: echo $(setvarStep.myOutputVar)
+    name: echovar
+
+# Map the variable from the debug job
+- job: B
+  dependsOn: A
+  pool: Hosted Linux Preview
+  variables:
+    myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
+  steps:
+  - script: echo $(myVarFromJobADebug)
+    name: echovar
+```
+
+```yaml
+jobs:
+
+# Set an output variable from a job with slicing
+- job: A
+  pool:
+    name: Hosted Linux Preview
+    parallel: 2 # Two slices
+  steps:
+  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
+    name: setvarStep
+  - script: echo $(setvarStep.myOutputVar)
+    name: echovar
+
+# Map the variable from the job for the first slice
+- job: B
+  dependsOn: A
+  pool: Hosted Linux Preview
+  variables:
+    myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromJobsA1)"
+    name: echovar
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet supported on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+On the **Variables** tab in the pipeline designer, you can create, set, and delete variables.
+Variables defined here are available to all jobs in the pipeline.
+
+---
+
 ### Secret variables
 
 We recommend that you make the variable ![Secret](_img/variables/secret-variable-icon.png)
@@ -110,15 +262,9 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 ![Keep password secret](_img/variables/keep-password-secret.png)
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
-Secret variables are encrypted at rest with a 2048-bit RSA key.
-They are automatically masked out of any log output from the pipeline.
-Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
-They *are* automatically decrypted for use as inputs to your build tasks.
-You can also pass them explicitly into a script from your build task (for example as `$(password)`).
-
 # [YAML](#tab/yaml)
+
+::: moniker range="vsts"
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
@@ -154,6 +300,20 @@ This does not work:
 This works: ***
 ```
 
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Secret variables are encrypted at rest with a 2048-bit RSA key.
+They are automatically masked out of any log output from the pipeline.
+Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
+They *are* automatically decrypted for use as inputs to your build tasks.
+You can also pass them explicitly into a script from your build task (for example as `$(password)`).
+
 ---
 
 ### Allow at queue time
@@ -175,7 +335,7 @@ For example, on the [Build tab](../tasks/index.md) of a build pipeline, add this
 | ![](../tasks/utility/_img/command-line.png) **Utility: Command Line** | Tool: `echo`<br />Arguments: `$(PATH)` |
 
 > [!NOTE]
-> If you have defined a process variable of the same name as an environment variable (for example, `PATH`), your value overrides the agent host's environment variable.
+> If you have defined a pipeline variable of the same name as an environment variable (for example, `PATH`), your pipeline variable value overrides the agent host's environment variable.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

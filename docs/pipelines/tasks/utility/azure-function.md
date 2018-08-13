@@ -1,6 +1,6 @@
 ---
-title: Azure function task for Microsoft VSTS and TFS 
-description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in VSTS and TFS
+title: Azure function task for Azure Pipelines and TFS 
+description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

@@ -1,6 +1,6 @@
 ```YAML
 # Azure App Service Deploy
-# Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
+# Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
 - task: AzureRmWebAppDeployment@4
   inputs:
     #connectionType: 'AzureRM' # Options: azureRM, publishProfile
@@ -25,8 +25,8 @@
     #webConfigParameters: # Optional
     #appSettings: # Optional
     #configurationSettings: # Optional
-    #useWebDeploy: false # Optional
-    #deploymentType: 'webDeploy' # Required when useWebDeploy == True# Options: webDeploy, zipDeploy, runFromZip
+    #enableCustomDeployment: false # Optional
+    #deploymentType: 'webDeploy' # Required when enableCustomDeployment == True# Options: webDeploy, zipDeploy, runFromZip
     #takeAppOfflineFlag: true # Optional
     #setParametersFile: # Optional
     #removeAdditionalFilesFlag: false # Optional

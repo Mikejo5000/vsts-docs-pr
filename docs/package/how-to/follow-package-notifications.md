@@ -1,6 +1,6 @@
 ---
-title: Follow a package to receive notifications - VSTS and TFS
-description: Following a package in VSTS or TFS will allow you to be notified every time a new version of the package is published
+title: Follow a package to receive notifications - Azure DevOps Services and TFS
+description: Following a package in Azure DevOps Services or TFS will allow you to be notified every time a new version of the package is published
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -32,6 +32,6 @@ If you’re using release views, you can get notifications when new version of a
 
 ## Follow a package from the notification settings page
 
- In addition to following a package from the _Feeds_ page, you can [manage your personal notifications](../../notifications/manage-personal-notifications.md) and set up a personal notification for a package or set of packages from the _Notification Settings_ page.
+ In addition to following a package from the _Feeds_ page, you can [manage your personal notifications](../../notifications/howto-manage-personal-notifications.md) and set up a personal notification for a package or set of packages from the _Notification Settings_ page.
 
 

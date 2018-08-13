@@ -8,19 +8,20 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/10/2018
+ms.date: 08/01/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Change the Azure subscription that your VSTS organization uses for billing
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If you want to use a different Azure subscription to bill purchases for your VSTS organization, you can either move it to a different Azure subscription that you have access to, or remove the current Azure subscription and then buy again using a new subscription.
 
 ## Move to a different subscription
 
-If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources).
+If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Choose **Resource groups**.
@@ -52,15 +53,15 @@ If the target subscription is in the same Azure Active Directory as the destinat
 1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as Azure subscription co-administrator or greater.
 
     If you experience browser problems with Azure,
-    make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+    make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Team Services organizations**. 
+2. Go to **All services** > **Team Services administration**. 
 
-   ![Choose All services and Team Services organizations](_img/change-azure-subscription/all-services-team-services-organizations.png)
+   ![Choose All services and Team Services administration](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
-3. Select your organization and remove billing.
+3. Select your organization and **Remove billing**.
 
-   ![Remove billing from your organization](_img/change-azure-subscription/choose-organization-and-remove-billing.png)
+   ![Remove billing from your organization](../accounts/_img/_shared/azure-portal-remove-billing.png)
 
 ### Purchase again using the new subscription
 

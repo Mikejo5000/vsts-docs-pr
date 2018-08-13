@@ -1,5 +1,5 @@
 ---
-title: CI/CD index to content for VSTS and Team Foundation Server | VSTS & TFS    
+title: CI/CD index to content for Azure Pipelines and Team Foundation Server | Azure Pipelines & TFS    
 description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI), test, and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+Azure Pipelines and Team Foundation Server help you implement a build, test, and deployment pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
 
@@ -31,8 +31,8 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
 <div class="ico48Link"><a href="languages/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
-<div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET</span></a></div>
-<div class="ico48Link"><a href="languages/dotnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
+<div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET</span></a></div>
+<div class="ico48Link"><a href="languages/dotnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET Core</span></a></div>
 <div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
 <div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
 <div class="ico48Link"><a href="languages/docker.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
@@ -68,7 +68,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 ## Step-by-step tutorials
 
-* [CI builds for Git in VSTS](build/ci-build-git.md)
+* [CI builds for Git in Azure Pipelines](build/ci-build-git.md)
 * [Set up multi-stage release](release/define-multistage-release-process.md)
 
 ## Videos
@@ -95,7 +95,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
 - [Manual and exploratory testing](../test/index.md)
 - [Load and performance testing](../test/load-test/index.md)
-- [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
+- [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)
 
 ::: moniker-end
 

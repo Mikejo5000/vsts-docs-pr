@@ -1,6 +1,6 @@
 ---
 title: Conda Environment
-description: How to create and activate a Conda environment when building code in VSTS and TFS
+description: How to create and activate a Conda environment when building code in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D97AA092-1F19-4729-B98F-E27615003C1E
@@ -41,7 +41,7 @@ None
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.md)]
+[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV1.md)]
 ::: moniker-end
 
 ## Arguments

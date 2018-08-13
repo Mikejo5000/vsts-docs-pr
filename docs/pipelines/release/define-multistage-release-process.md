@@ -1,6 +1,6 @@
 ---
-title: Define a multi-stage CD release process | VSTS Tutorial
-description: DevOps CI CD - Define a multi-stage continuous deployment (CD) process for your ASP.NET Core app using VSTS
+title: Define a multi-stage CD release pipeline | Azure Pipelines Tutorial
+description: DevOps CI CD - Define a multi-stage continuous deployment (CD) pipeline for your ASP.NET Core app using Azure Pipelines
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,13 +12,13 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Define your multi-stage continuous deployment (CD) process
+# Define your multi-stage continuous deployment (CD) pipeline
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly
+Azure Pipelines and Team Foundation Server (TFS) provide a highly
 configurable and manageable pipeline for releases to multiple environments
 such as development, staging, QA, and production environments; including
 requiring approvals at specific stages.
@@ -40,7 +40,7 @@ You'll need:
   you can create it by working through any of the following quickstarts and tutorials:
 
   - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Azure DevOps project](../get-started-azure-devops-project.md)
+  - [Azure DevOps Project](../get-started-azure-devops-project.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines,
@@ -54,7 +54,7 @@ You'll need:
 
 In this section, you will check that the triggers you need for continuous deployment are configured in your release pipeline.
 
-1. In the **Build &amp; Release** hub, open the **Releases** tab. Select your release pipeline and, in
+1. In the **Pipelines** hub, open the **Releases** tab. Select your release pipeline and, in
    the right pane, choose **Edit**.
 
    ![Opening the release pipeline for editing](_img/define-multistage-release-process/open-for-edit.png)
@@ -64,8 +64,7 @@ In this section, you will check that the triggers you need for continuous deploy
 
    ![Viewing the continuous integration trigger setting](_img/define-multistage-release-process/ci-trigger.png)
 
-   For more information, see [Release triggers](../release/triggers.md?toc=/vsts/deploy-azure/toc.json)
-   in the Release Management documentation.
+   For more information, see [Release triggers](triggers.md).
 
 1. Choose the **Pre-deployment conditions** icon in the **Environments** section to open the conditions panel.
    Make sure that the trigger for deployment to this environment is set to **Release**.
@@ -76,14 +75,13 @@ In this section, you will check that the triggers you need for continuous deploy
    Notice that you can also define artifact filters that determine a condition for the release to proceed,
    and set up a schedule for deployments. You can use features to, for example, specify a branch from
    which the build artifacts must have been created, or a specific time of day when you know the app will not be heavily used.
-   For more information, see [Environment triggers](../release/triggers.md?toc=/vsts/deploy-azure/toc.json)
-   in the Release Management documentation.
+   For more information, see [Environment triggers](triggers.md).
 
 ## Extend a release pipeline by adding environments
 
 In this section, you will add a new environment to the release pipeline. The two environments will deploy your app to the
 "QA" and the "Production" targets (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a
-live or production server. Each [environment](../release/environments.md?toc=/vsts/deploy-azure/toc.json)
+live or production server. Each [environment](environments.md)
 represents one deployment target, though that target could be a physical or virtual server,
 a groups of servers, or any other legitimate physical or virtual deployment target.
 
@@ -122,8 +120,7 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    Notice that you can specify deployment to start when a deployment to the previous environment is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
    (the default is that all tasks must succeed). You're most likely to set this option if you create a pipeline containing
-   [fork and join deployments](../../pipelines/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
-   that deploy to different environments in parallel.  
+   [fork and join deployments](triggers.md) that deploy to different environments in parallel.  
 
 1. Open the **Tasks** drop-down list and choose the **QA** environment.
 
@@ -163,7 +160,7 @@ you deploy to production. In this section, you will add an approval step to the 
 
    You can add as many approvers as you need, both individual accounts and organization groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
-   For more information, see [Approvals and gates overview](../../pipelines/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
+   For more information, see [Approvals and gates overview](approvals/index.md).
 
 1. Save the modified release pipeline.
 
@@ -219,7 +216,7 @@ from the release you created in the previous section.
 
 1. In the release summary page, choose the **Logs** link. While the deployment is taking place,
    this page shows the live log from the agent and, in the left pane, an indication of the status
-   of each operation in the deployment process for each environment.
+   of each operation in the deployment pipeline for each environment.
 
    ![Viewing the live deployment log](_img/define-multistage-release-process/live-logs-deployment.png)
 
@@ -227,7 +224,7 @@ from the release you created in the previous section.
    of who approved (or rejected) the deployment, and the message that user provided.
 
 1. After the deployment is complete, the entire log file is displayed in the right pane.
-   Select any of the process steps in the left pane to show just the log file contents for that step.
+   Select any of the pipeline steps in the left pane to show just the log file contents for that step.
    This makes it easier to trace and debug individual parts of the overall deployment. Alternatively, download
    the individual log files, or a zip of all the log files, from the icons and links in the page.
 
