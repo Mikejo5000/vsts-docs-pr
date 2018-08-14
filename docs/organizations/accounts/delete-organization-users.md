@@ -12,13 +12,13 @@ ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
-# Delete users from Azure DevOps
+# Delete users from Azure DevOps  
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If users no longer require access to a project or your Azure DevOps organization, you can remove their access to the project or your organization.
+If users no longer require access to a project or your Azure DevOps organization, you can remove their access to the project or your organization.  
 
-## Prerequisites
+## Prerequisites  
 
 - You need [Azure DevOps project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
 
