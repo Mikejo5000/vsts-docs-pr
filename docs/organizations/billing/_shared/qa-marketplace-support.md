@@ -6,9 +6,9 @@ A: Who to contact depends on the support you need:
 
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support).
 
-* Help with Visual Studio Team Services (VSTS) - [VSTS support](https://visualstudio.microsoft.com/team-services/support-visual-studio-team-services).
+* Help with Azure DevOps Services - [Azure DevOps Services support](https://visualstudio.microsoft.com/team-services/support-visual-studio-team-services).
 
-* Help with Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support).
+* Help with Microsoft Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support).
 
 * General marketplace help - [the Visual Studio Marketplace team](mailto:vsmarketplace@microsoft.com).
 
