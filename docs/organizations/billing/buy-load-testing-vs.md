@@ -1,6 +1,6 @@
 ---
 title: Buy cloud-based load testing | Azure DevOps Services
-description: Steps to purchase and enable cloud-based load testing in Azure DevOps Services (Visual Studio Online) via the Azure portal
+description: Steps to purchase and enable cloud-based load testing in Azure DevOps Services via the Azure portal
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
