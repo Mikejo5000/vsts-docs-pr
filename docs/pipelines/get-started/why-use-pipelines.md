@@ -1,5 +1,6 @@
 ---
 title: Why Use Azure DevOps Pipelines?
+titleSuffix: Azure DevOps Services
 description: Determine how Azure DevOps Pipelines can improve your coding environment and code delivery.
 ms.prod: devops
 ms.technology: devops-cicd
