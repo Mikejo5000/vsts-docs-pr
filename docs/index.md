@@ -282,7 +282,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Analytics views</h3>
-                                                    <p>Define filter critera to support creation of Power BI reports using the Analytics service.</p>
+                                                    <p>Define filter criteria to support creation of Power BI reports using the Analytics service.</p>
                                                 </div>
                                             </div>
                                         </div>
