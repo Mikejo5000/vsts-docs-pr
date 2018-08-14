@@ -23,7 +23,7 @@ After you create a new account and team project in VSTS, you can begin sharing y
 
 ## Install Git command line tools 
 
-0. Install one of the following Git command line tools:
+1. Install one of the following Git command line tools:
 
   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../git/set-up-credential-managers.md#windows)
   - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../git/set-up-credential-managers.md#macos-and-linux)
