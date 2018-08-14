@@ -81,7 +81,7 @@ Individual contributors can set their user preferences, enable features that are
 <td><ul>
 <li>[View your subscriptions, opt-out as needed](../../notifications/unsubscribe-default-notification.md)</li>
 <li>[Change your preferred email address](../../notifications/change-email-address.md)</li>
-<li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
+<li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
 </ul></td>
 <td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When an VSTS project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
@@ -90,6 +90,7 @@ Individual contributors can set their user preferences, enable features that are
 </table>
  
 
+<a id="team" />
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
@@ -135,7 +136,7 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 <tr>
 <td> **Notifications** </td>
 <td><ul>
-<li>[Manage team notifications](../../notifications/manage-team-notifications.md)</li>
+<li>[Manage team notifications](../../notifications/howto-manage-team-notifications.md)</li>
 </ul></td>
 <td>A number of team notifications are automatically defined when a team is added. To learn more about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).   </td>
 </tr>
@@ -231,7 +232,7 @@ From the administrative pages for a project, you can configure the settings show
 <td><ul>
 <li>Manage project-level notifications</li>
 </ul></td>
-<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md).</td>
+<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md).</td>
 </tr>
 <tr>
 <td>**Service Hooks**</td>
@@ -248,7 +249,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td>**Work, Project configuration**</td>
+<td><a id="work" />**Work, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -257,7 +258,7 @@ From the administrative pages for a project, you can configure the settings show
 </td>
 </tr>
 <tr>
-<td>**CI/CD** </td>
+<td><a id="pipelines" />**CI/CD** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
 <li>[Manage service connections](../../pipelines/library/service-endpoints.md)</li>
@@ -267,7 +268,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td>**Code** </td>
+<td><a id="repos" />**Code** </td>
 <td><ul>
 <li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
@@ -277,7 +278,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>You can manage code using [Git repositories](../../repos/git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md). </td>
 </tr>
 <tr>
-<td>**Test** </td>
+<td><a id="test-center" />**Test** </td>
 <td><ul>
 <li>[Set test retention policies](../../test/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>
@@ -437,7 +438,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
 <tr>
 <td>**Extensions**</td>
@@ -525,7 +526,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
 <tr>
 <td>**Extensions**</td>
