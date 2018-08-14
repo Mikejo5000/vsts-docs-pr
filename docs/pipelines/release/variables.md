@@ -1,6 +1,6 @@
 ---
 title: Variables in Release Management
-description: Understand variables in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand variables in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 As you compose the tasks for deploying your application into each environment in your DevOps CI/CD processes, variables will help you to:
 
-* Define a more generic deployment process once, and then
+* Define a more generic deployment pipeline once, and then
 customize it easily for each environment. For example, a variable
 can be used to represent the connection string for web deployment,
 and the value of this variable can be changed from one environment
@@ -30,7 +30,7 @@ to another. These are **custom variables**.
 
 * Use information about the context of the particular release,
 [environment](environments.md), [artifacts](artifacts.md), or
-[agent](../agents/agents.md) in which the deployment process is
+[agent](../agents/agents.md) in which the deployment pipeline is
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
@@ -100,8 +100,8 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or VSTS. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
-> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
+> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
 > | System.TeamProjectId | The ID of the project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
@@ -182,7 +182,7 @@ Some of the most significant variables are described in the following tables.
 > | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
 > | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
 > | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | |
-> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group phases. | 1 | TFS 2018 U1 |
+> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs. | 1 | TFS 2018 U1 |
 
 <!--
 [AGENT_SERVEROMDIRECTORY] -> [C:\agent\externals\vstsom]
@@ -195,7 +195,7 @@ Some of the most significant variables are described in the following tables.
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
 variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
-it implies that the variable is not populated for that artifact type. 
+it implies that the variable is not populated for that artifact type.
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|

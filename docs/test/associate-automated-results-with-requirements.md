@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated test results with requirements
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
 If your test suites include **requirements**, link these to your test results
 and view the results on your team's dashboard. This enables end-to-end 
 traceability of requirements for agile teams. For example, when teams do not use
@@ -52,7 +50,7 @@ and choose the **Associate tests to work item** (link) icon.
 ## See Also
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
-* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 * [Test with unified agents and phases](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents)
 * [Continuous testing scenarios and capabilities](index.md)
 

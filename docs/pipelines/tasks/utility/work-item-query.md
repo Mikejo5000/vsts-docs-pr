@@ -1,6 +1,6 @@
 ---
-title: Work item query task for Microsoft VSTS and TFS 
-description: Build and release task to ensure the number of matching items returned by a work item query in within the configured threshold in VSTS and TFS
+title: Work item query task for Azure Pipelines and TFS 
+description: Build and release task to ensure the number of matching items returned by a work item query in within the configured threshold in Azure Pipelines and TFS
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 ![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
