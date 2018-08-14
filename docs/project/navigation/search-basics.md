@@ -1,6 +1,6 @@
 ---
 title: Search across your code base, work items, or wiki
-titleSuffix: VSTS & TFS   
+titleSuffix: Azure DevOps Services & TFS   
 description: Find code or work items quickly in (VSTS) and Team Foundation Server (TFS)  
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.prod: devops

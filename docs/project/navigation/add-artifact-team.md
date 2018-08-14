@@ -1,7 +1,7 @@
 ---
 title: Add artifact or team
-titleSuffix: VSTS & TFS
-description: How to add a new artifact, view, or team within the web portal in Visual Studio Team Services and Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS
+description: How to add a new artifact, view, or team within the web portal in Azure DevOps Services and Team Foundation Server
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 

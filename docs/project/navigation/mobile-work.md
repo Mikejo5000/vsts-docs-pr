@@ -1,7 +1,7 @@
 ---
 title: View and update work items via a mobile browser 
-titleSuffix: VSTS & TFS  
-description: View and update work items from your mobile client when using Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS  
+description: View and update work items from your mobile client when using Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.prod: devops

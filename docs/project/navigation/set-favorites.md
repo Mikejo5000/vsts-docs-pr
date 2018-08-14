@@ -1,7 +1,7 @@
 ---
 title: Set personal or team favorites
-titleSuffix: VSTS & TFS  
-description: Quickly access artifacts by favoriting them in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS  
+description: Quickly access artifacts by favoriting them in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
@@ -69,7 +69,7 @@ You can set favorites for the following artifacts from the indicated page.
 0. To favorite a project, open the project **Summary** page and choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, VSTS icon](_img/favorites/favorite-project-vert.png)  
+	> ![web portal, Azure DevOps logo](_img/favorites/favorite-project-vert.png)  
 <a id="team-artifact" />
 0. To favorite a team artifact, open **Work>Backlogs** or **Work>Boards**. Select the team you want to favorite from the team selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon.
 
@@ -93,7 +93,7 @@ You can set favorites for the following artifacts from the indicated page.
 0. To favorite a project, open the project **Summary** page and choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, VSTS icon](_img/favorites/favorite-project-horz-brn.png)
+	> ![web portal, Azure DevOps logo](_img/favorites/favorite-project-horz-brn.png)
 
 	Or, you can favorite a project from the **Projects** page by choosing the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to the project. 
 

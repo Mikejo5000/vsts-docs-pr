@@ -1,7 +1,7 @@
 ---
 title: Navigating within the web portal  
-titleSuffix: VSTS & TFS 
-description: Navigate within the user interface/web portal of Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS 
+description: Navigate within the user interface/web portal of Azure DevOps Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -18,7 +18,7 @@ ms.date: 07/21/2018
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
 ::: moniker range="vsts"
-The web portal for Visual Studio Team Services (VSTS) is organized around a set of services&mdash;such as, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
+The web portal for Azure DevOps Services is organized around a set of services&mdash;such as, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
 
 ::: moniker-end
 
@@ -27,7 +27,7 @@ The web portal for Team Foundation Server (TFS) is organized around a set of ser
 ::: moniker-end
 
 > [!NOTE]   
-> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json). 
+> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a team project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json). 
 
 Here's what you need to know to get up and running using the web portal.  
 
@@ -96,7 +96,7 @@ To start planning and tracking work, see [About Agile tools](../../boards/work-i
 
 To connect to the web portal, you need your user account added to a project. This is typically done by the [organization owner](../../organizations/accounts/add-organization-users-from-user-hub.md).
 
-Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../../organizations/billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://www.visualstudio.com/team-services/pricing/).
+Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../../organizations/billing/buy-basic-access-add-users.md). Find out more about licensing from [Azure DevOps pricing](https://www.visualstudio.com/team-services/pricing/).
 
 Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). 
 
