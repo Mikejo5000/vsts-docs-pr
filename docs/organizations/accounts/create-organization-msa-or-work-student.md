@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-To create a Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Visual Studio Team Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site. 
+To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Visual Studio Team Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site. 
 
 With Azure DevOps Services, you can upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
@@ -109,7 +109,7 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 1. After Azure DevOps Services creates your organization and project, add code, work items, or more users.
 
     ![Add code or work items](_img/_shared/project-created.png)
-	Congratulations, you're now a Azure DevOps Services organization owner! 
+	Congratulations, you're now an Azure DevOps Services organization owner! 
 
 	To sign in to your Azure DevOps Services organization at any time, go to `https://<yourorganization>.visualstudio.com`.
 
