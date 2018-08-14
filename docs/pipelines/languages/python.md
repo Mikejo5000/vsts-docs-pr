@@ -88,8 +88,8 @@ Add the following YAML to run a Python script file named `myPythonScript.py`.
 ```yaml
 - task: PythonScript@0
   inputs:
-    targetType: 'filePath'
-    filePath: 'src/myPythonScript.py'
+    scriptSource: 'filePath'
+    scriptPath: 'src/myPythonScript.py'
     arguments: ''
 ```
 
