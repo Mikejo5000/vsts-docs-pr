@@ -12,10 +12,9 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
 # Code with Git
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
 After you create a new organization and team project in VSTS, you can begin sharing your code with others.
 
@@ -30,7 +29,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Clone the repo to your computer
 
-[!INCLUDE [temp](../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

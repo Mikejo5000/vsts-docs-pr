@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
+
 # Manage users for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Add users to your VSTS organization and specify the level of features they can use, such as Basic or Stakeholder.  
 These kinds of users can join your VSTS organization for free:
@@ -50,7 +51,7 @@ access levels.  You can multi-select users and bulk edit their extensions and ac
 partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
 from whom you might remove access or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

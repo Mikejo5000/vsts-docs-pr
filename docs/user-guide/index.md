@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # New User Guide
 
-**VSTS**
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 New to Visual Studio Team Services (VSTS)?
 
@@ -40,14 +40,14 @@ Get started with a free organization, share your code using Git, and track your 
 ## Step-by-Step Tutorials
 
 - [Set favorites](/../project/navigation/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Follow work and pull requests](../work/work-items/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Follow work and pull requests](../boards/work-items/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Get started as a Stakeholder](../organizations/security/get-started-stakeholder.md)
 
 ## Concepts
 
 - [Key concepts](concepts.md)
 - [Source control](source-control.md)
-- [Kanban & Agile tools](../work/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Kanban & Agile tools](../boards/backlogs/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Software development roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
@@ -59,7 +59,7 @@ Get started with a free organization, share your code using Git, and track your 
 - [Use #ID to link to work items](../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Navigate using your organization home page](../project/navigation/work-across-projects.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Manage your notifications](../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Manage your notifications](../notifications/howto-manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Set your preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](../organizations/projects/connect-to-projects.md)
 

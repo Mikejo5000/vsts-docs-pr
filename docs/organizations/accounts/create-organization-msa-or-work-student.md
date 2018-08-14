@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/26/2017
 monikerRange: 'vsts'
 ---
+
 # Create your VSTS organization with a personal Microsoft account or a work/school account
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Sign up for a [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) 
 organization to upload and share code in free unlimited private 
@@ -157,7 +158,7 @@ that you're connecting to your VSTS organization.
 	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-*	[Create your backlog](../../work/backlogs/create-your-backlog.md), 
+*	[Create your backlog](../../boards/backlogs/create-your-backlog.md), 
 	[manage your process](../../organizations/settings/work/manage-process.md), 
 	or [customize your process](../../organizations/settings/work/customize-process.md)
 
