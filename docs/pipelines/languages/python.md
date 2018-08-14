@@ -176,7 +176,10 @@ Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) t
 
 ```yaml
 - task: PublishBuildArtifacts@1
-  pathToPublish: 'dist'
+  displayName: 'Publish Artifact: dist'
+  inputs:
+    PathtoPublish: dist
+    ArtifactName: dist
 ```
 
 ## Related extensions
