@@ -90,7 +90,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
-> ![Open Boards>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
+> ![Open Work>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -101,14 +101,14 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 ::: moniker range="vsts"   
 > [!div class="mx-imgBorder"]
-> ![Boards>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
+> ![Work>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![Boards>Work Items ](../work-items/_img/view-add/work-items-hub.png)
+> ![Work>Work Items ](../work-items/_img/view-add/work-items-hub.png)
 
 ::: moniker-end   
 
@@ -154,7 +154,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
+![New Navigation, Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -164,10 +164,10 @@ Backlogs present work items as lists. A product backlog represents your project 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
+!["Web portal, choose Work>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Boards>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Work>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
 ---
@@ -179,7 +179,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-![New Navigation, Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+![New Navigation, Work>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -189,10 +189,10 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+!["Web portal, choose Work>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Boards>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
+![Work>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
 ::: moniker-end
 
 ---
@@ -205,22 +205,9 @@ You can also filter the cards on your taskboard to show only those cards mapped 
 
 Queries are filtered lists of work items based on criteria that you define using a query editor. You use queries to find groups of work items with something in common,to triage a set of items to prioritize or assign them, or to create status and trend charts that you can then add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
 > [!div class="mx-imgBorder"]  
 > ![Queries, Active Bugs, new navigation](_img/about-boards/queries-active-bugs-vert.png)   
-::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-![Web portal, Boards>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
-
----
 
 ## Delivery plans
 
