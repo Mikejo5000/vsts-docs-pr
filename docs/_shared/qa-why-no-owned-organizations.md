@@ -17,8 +17,7 @@ Closing your browser doesn't always completely sign you out from Azure DevOps. H
 
 1.	Go to this URL: http://aka.ms/vssignout.
 
-	You'll see a message that says, "Sign out in progress." After you're signed out, you're redirected to the 
-	Visual Studio @visualstudio.microsoft.com webpage. 
+	You'll see a message that says, "Sign out in progress." After you're signed out, you're redirected to the Visual Studio @visualstudio.microsoft.com webpage. 
 
 	> [!TIP]
 	> If the sign-out page takes more than a minute, close the browser and continue.
