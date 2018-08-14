@@ -1,6 +1,6 @@
 ---
-title: Manage users and access in Visual Studio Team Services
-description: Add users and assign access levels on the Users page in Visual Studio Team Services (VSTS). 
+title: Manage users and access in Azure DevOps Services
+description: Add users and assign access levels on the Users page in Azure DevOps Services. 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
@@ -11,28 +11,28 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
-# Manage users for VSTS
+# Manage users for Azure DevOps Services
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Learn how to add users to your Visual Studio Team Services (VSTS) organization and specify the level of features they can use, such as Basic or Stakeholder.
+Learn how to add users to your Azure DevOps Services organization and specify the level of features they can use, such as Basic or Stakeholder.
 
-These kinds of users can join your VSTS organization for free:
+These types of users can join your Azure DevOps Services organization for free:
 
-*	Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), such as version control and tools for Agile, Java, build, release management.
+*	Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 *	Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-*	Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, Visual Studio subscribers get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
+*	Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
-[Need more users with Basic features or Visual Studio subscriptions?](../billing/buy-basic-access-add-users.md)
+Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
 > [!NOTE]
-> You can add people to team projects rather than to your organization. VSTS automatically assigns the users [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to team projects](add-team-members-vs.md).
+> You can add people to projects instead of to your organization. Azure DevOps Services automatically assigns the users [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to projects](add-team-members-vs.md).
 >
-> When people don't need access to your VSTS organization anymore, [delete them](delete-organization-users.md) from your organization. 
+> When people don't need access to your Azure DevOps Services organization anymore, [delete them](delete-organization-users.md) from your organization. 
 
 ## Prerequisites
 
-You must have [VSTS project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).   
+You must have [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).   
 
 
 ##	Manage users
@@ -47,13 +47,13 @@ The Users view shows key information per user in a table. In this view, you can:
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Go to your VSTS admin settings.
+2. Go to your Azure DevOps Services admin settings.
 
-    ![Open VSTS admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab, and then select **Add new users**.
 
@@ -96,15 +96,15 @@ The Users view shows key information per user in a table. In this view, you can:
    ![Select the User hub, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu.png)
 
 
-### How does *access* differ from *permissions*?
+### How is *access* different from *permissions*?
 
 Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md). 
 
 ## Related articles
 
 - [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
-- [Connect to a team project](../../organizations/projects/connect-to-projects.md)
+- [Connect to a project](../../organizations/projects/connect-to-projects.md)
 - [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Delete users from VSTS](delete-organization-users.md)
+- [Delete users from Azure DevOps Services](delete-organization-users.md)
 
