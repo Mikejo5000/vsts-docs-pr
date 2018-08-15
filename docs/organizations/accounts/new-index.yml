@@ -3,7 +3,7 @@ documentType: LandingData
 title: Azure DevOps Services Organization Management
 metadata:
   title: Organization management topics and articles for Azure DevOps Services
-  description: Learn the basics of the Azure DevOps Services interface and some common tasks.
+  description: Sign up for an Azure DevOps Services organizaton, add users, and manage permissions and access.
   ms.date: 09/05/2018
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
@@ -12,7 +12,10 @@ metadata:
   author: chcomley
   manager: douge
 sections:
-- title: 5-minute Quickstarts
+- title:
+  items:
+  - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
+- title: 5-minute quickstarts
   items:
   - type: list
     style: cards
@@ -45,7 +48,7 @@ sections:
           src: 
         title: Buy cloud-based load testing
 
-- title: Step-by-step Tutorials
+- title: Step-by-step tutorials
   items:
   - type: list
     style: cards
@@ -96,19 +99,6 @@ sections:
           src: 
         title: Approve extension requests
 
-- title: Troubleshooting
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-      - href: faq-extension-trials.md
-        html: <p></p>
-        image:
-          src: 
-        title: Extension trials
-
 - title: Reference
   items:
   - type: list
@@ -116,17 +106,17 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../../security/index.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+       - href: ../security/index.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
         html: <p></p>
         image:
           src: 
         title: Permissions
-      - href: ../../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts
+      - href: ../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts
         html: <p></p>
         image:
           src: 
         title: About access levels
-      - href: ../../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts
+      - href: ../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts
         html: <p></p>
         image:
           src: 
@@ -139,26 +129,26 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - herf: ../../user-guide/index.yml
+      - herf: ../user-guide/index.yml
         html:
         image:
           src:
-        title: Azure DevOps Services New User Guide
+        title: New User Guide
       - href: ../project/navigation/index.md
         html: <p></p>
         image:
           src: 
         title: Navigation basics
-      - href: ../accounts/index.md
+      - href: ../billing/index.md
         html: <p></p>
         image:
           src: 
-        title: Organization management
-      - href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
+        title: Billing
+      - href: ../../security/index.md
         html: <p></p>
         image:
           src: 
-        title: Buy Visual Studio cloud subscriptions
+        title: Security & Identity
       - href: ../accounts/xamarin-univ.md
         html: <p></p>
         image:

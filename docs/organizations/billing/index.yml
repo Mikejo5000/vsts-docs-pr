@@ -12,19 +12,10 @@ metadata:
   author: chcomley
   manager: douge
 sections:
-- title: Billing for Azure DevOps Services
+- title:
   items:
-    - href: https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/
-      html: <p></p>
-      image:
-        src: 
-      title: Azure DevOps Services pricing  
-    - href: overview.md
-      html: <p></p>
-      image:
-        src: 
-      title: Azure DevOps Services billing overview  
-- title: 5-minute Quickstarts
+  - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
+- title: 5-minute quickstarts
   items:
   - type: list
     style: cards
@@ -57,7 +48,7 @@ sections:
           src: https://docs.microsoft.com/media/common/i_extensions.svg
         title: Buy cloud-based load testing
 
-- title: Step-by-step Tutorials
+- title: Step-by-step tutorials
   items:
   - type: list
     style: cards
