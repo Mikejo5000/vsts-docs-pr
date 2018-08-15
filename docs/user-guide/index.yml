@@ -31,10 +31,10 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: vsts/pipelines/get-started/pipelines-get-started.md
+      - href: ../pipelines/get-started/pipelines-get-started.md
         html: <p></p>
         image:
-          src: vsts/_img/index/DevOpsIconPipelines40.svg
+          src: ../_img/index/DevOpsIconPipelines40.svg
         title: Start using Azure DevOps Pipelines  
 - title: 5-minute Quickstarts
   items:
@@ -96,7 +96,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_setup.svg
         title: Set favorites
-      - href: ./boards/work-items/follow-work-items.md
+      - href: ../boards/work-items/follow-work-items.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_pull-request.svg
@@ -144,7 +144,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_xplat-code.svg
         title: Source control
-      - href: vsts/work/backlogs/overview.md
+      - href: ../work/backlogs/overview.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_kaban.svg
