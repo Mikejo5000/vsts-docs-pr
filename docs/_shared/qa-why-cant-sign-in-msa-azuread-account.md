@@ -2,9 +2,9 @@
 
 A:	This happens when your sign-in address is shared by your personal Microsoft account and by your work account or school account, but your selected identity doesn't have access. Although both identities have the same sign-in address, they're still separate identities with different profiles, security settings, and permissions.
 
-Closing your browser might not sign you out completely from Azure DevOps. Try signing out completely from Azure DevOps by completing the following steps. Then, sign in again to Azure DevOps, and select your other identity.
+Closing your browser might not sign you out completely from Azure DevOps Services. Try signing out completely from Azure DevOps Services by completing the following steps. Then, sign in again to Azure DevOps Services, and select your other identity.
 
-1.	Close all browsers, including browsers that aren't running Azure DevOps.
+1.	Close all browsers, including browsers that aren't running Azure DevOps Services.
 
 1.	Open a private or incognito browsing session. 
 
@@ -15,4 +15,4 @@ Closing your browser might not sign you out completely from Azure DevOps. Try si
 	> [!TIP]
 	> If the sign-out page takes more than a minute to sign you out, close the browser and continue.
 
-1.	Sign in to Azure DevOps again. Select your other identity.
+1.	Sign in to Azure DevOps Services again. Select your other identity.
