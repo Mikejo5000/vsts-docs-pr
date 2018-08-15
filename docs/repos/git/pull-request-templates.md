@@ -25,7 +25,7 @@ This article shows you how to get started with pull request templates.
 
 ## What is a pull request template?
 
-A pull request template is a block of markdown formatted text that is added to your pull request description when the pull request is created. VSTS allows you to create the following type of pull request templates:
+A pull request template is a file containing [markdown](../../project/wiki/markdown-guidance.md) text that is added to your pull request description when the pull request is created. VSTS allows you to create the following type of pull request templates:
 
 - A **default** pull request template that is automatically applied for all new pull requests in the repository, unless overridden by a branch specific pull request template
 - **Branch specific** pull request templates that are automatically applied to pull requests targeting a specific branch
@@ -33,7 +33,7 @@ A pull request template is a block of markdown formatted text that is added to y
 
 A pull request template is a markdown file or text file located in a designated folder. When the pull request template is applied, the contents of the pull request template are placed in the pull request description. If the following snippet was the default pull request template for a repository, it would automatically be set as the description for any pull request into that repository, unless there was a more specific branch pull request template that applied.
 
-```
+```markdown
 Thank you for your contribution to the Fabrikam Fiber repo. 
 Before submitting this PR, please make sure:
 
@@ -59,11 +59,14 @@ When a new pull request is created in the repository, unless a more specific bra
 
 You can edit or add to this description and append additional pull request templates if desired by selecting them from the **Add a template** drop-down.
 
+>[!NOTE]
+>When a default or branch specific pull request template is automatically applied, it replaces the standard commit messages that are usually used for the default description. You can add them back by selecting **Add commit messages**.
+
 ## Branch specific pull request templates
 
 Branch specific pull request templates can be configured for pull requests that target a specific branch. To configure your repository with a branch specific pull request template, create a `.txt` or `.md` file named after your branch. The name must match the first level of the branch name, such as `master`, `dev`, `release`, or `feature`. Each branch specific pull request template is applied any time a pull request targets that branch or any branches contained under it. For example the pull request template named `feature.md` would be applied if a pull request targeted the `feature` branch or any `feature/*` branches.
 
-Branch specific pull request templates must be saved in your repository the following folder hierarchy: `pull_request_template\branches\`. These folders must be in one of the following folders in your repository.
+Branch specific pull request templates must be saved in your repository using the following folder hierarchy: `pull_request_template\branches\`. These folders must be based in one of the following folders in your repository.
 
 - The root folder of the repository
 - A folder named `.vsts` that is contained in the root folder of the repository
