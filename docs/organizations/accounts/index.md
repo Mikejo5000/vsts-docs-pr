@@ -27,7 +27,7 @@ Sign up for an Azure DevOps Services organization. Add users and manage permissi
 
 ## Step-by-Step Tutorials
 
-* [Connect Azure DevOps Services to Azure AD](connect-organization-to-aad.md)
+* [Connect Azure DevOps Services to Azure Active Directory](connect-organization-to-aad.md)
 
 ## Reference
 
