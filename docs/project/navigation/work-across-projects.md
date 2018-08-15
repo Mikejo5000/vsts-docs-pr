@@ -259,7 +259,7 @@ To open a team room, choose **Projects>Rooms**. You'll see all the team rooms de
 To learn more about team rooms, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).
 
 > [!NOTE]  
-> Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Azure DevOps Services and Team Foundation Server (TFS).  
+> Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
  
 ::: moniker-end
 
@@ -270,27 +270,3 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
 - [View and update work items via the mobile browser](mobile-work.md)  
 
-<!---
-
-
-::: moniker range="vsts"
-
-To access these pages, sign in to your VSTS organization and choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo. The URL follows this pattern: 
-<b>https://<i>AccountName</i>.visualstudio.com/_projects</b>
-
-You'll see something similar to the following welcome page.
-
-
-> [!div class="mx-imgBorder"]  
-![Account home welcome page](_img/projects-page/account-home-welcome.png) 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-To access these pages, sign in to your TFS server and choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo. The URL follows this pattern: 
-
-> [!div class="mx-imgBorder"]  
-> ![Account home welcome page](_img/org-hub-tfs/account-home-welcome.png)
-::: moniker-end
-
--->

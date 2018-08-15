@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Set personal or team favorites    
 
-**VSTS | TFS 2018 | TFS 2017.1**  
+**Azure DevOps Services | TFS 2018 | TFS 2017.1**  
 
 By favoriting an artifact or view, you can quickly access it. An artifact is a specific container, definition, or configurtion of a feature or tool&mdash;such as a project, repository, build pipeline, or query. As your code base, work tracking efforts, developer operations, and organization grows, you'll want to be able to quickly navigate to those artifacts of interest to you and your team. Setting favorites allows you to do just that.  
 
