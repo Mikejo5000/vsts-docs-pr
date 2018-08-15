@@ -14,21 +14,16 @@ metadata:
 sections:
 - title: Billing for Azure DevOps Services
   items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-      - href: https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/
-        html: <p></p>
-        image:
-          src: 
-        title: Azure DevOps Services pricing  
-      - href: overview.md
-        html: <p></p>
-        image:
-          src: 
-        title: Azure DevOps Services billing overview  
+    - href: https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/
+      html: <p></p>
+      image:
+        src: 
+      title: Azure DevOps Services pricing  
+    - href: overview.md
+      html: <p></p>
+      image:
+        src: 
+      title: Azure DevOps Services billing overview  
 - title: 5-minute Quickstarts
   items:
   - type: list
