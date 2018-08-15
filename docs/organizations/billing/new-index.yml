@@ -15,6 +15,9 @@ sections:
 - title:
   items:
   - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
+- title:
+  items:
+  - html: All Azure DevOps Services charges appear on your monthly Azure bill. <a href=”https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/>Azure DevOps Services pricing.</a><a href=”overview.md>Billing overview for Azure DevOps Services.</a>
 - title: 5-minute Quickstarts
   items:
   - type: list
