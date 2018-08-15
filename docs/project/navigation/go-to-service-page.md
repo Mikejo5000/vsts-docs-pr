@@ -136,7 +136,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![](../../_i
 <a id="collection-admin-context" /> 
 
 ::: moniker range="vsts"
-## Open Admin settings 
+## Open Admin or Organization settings 
 
 Account owners and members of the Project Collection Administators group configure resources for all projects or the entire organization, including adding users, from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 

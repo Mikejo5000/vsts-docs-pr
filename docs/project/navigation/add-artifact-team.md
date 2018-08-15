@@ -34,7 +34,7 @@ You can quickly add a query or work item when working from a **Work** page.
 
 ::: moniker range="vsts"
 
-Choose a **Work** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 ![Work, add artifact](_img/add-artifact/add-work-item-query-vert.png)

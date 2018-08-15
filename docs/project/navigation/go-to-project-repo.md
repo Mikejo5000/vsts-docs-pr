@@ -104,7 +104,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 # [New navigation](#tab/new-nav)  
 ::: moniker range="vsts"
-0. Choose **Code>Files**.
+0. Choose **Repos>Files**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](../../organizations/public/_img/browse-code/open-code-vert-brn.png) 

@@ -98,7 +98,10 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 # [Previous navigation](#tab/previous-nav)
 
-Choose the ![](../../_img/icons/Project-icon.png) Azure DevOps logo to open **Projects**. 
+Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
 
 ::: moniker range="vsts"
 Choose **My work items** to access the set of work items assigned to you or followed by you. The lists available from each page span all projects that you work in.

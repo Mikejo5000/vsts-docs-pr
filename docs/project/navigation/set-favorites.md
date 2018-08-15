@@ -124,10 +124,15 @@ Access your favorites by choosing the ![](../../_img/icons/inbox.png) inbox icon
 
 # [Previous navigation](#tab/previous-nav)
 
-From your Projects page, choose **My Favorites** to quickly access any artifact or item that you've marked as a favorite. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
-> [!div class="mx-imgBorder"]  
-> ![Account home, Favorites page](_img/favorites/project-page-favorites-horz.png)   
+	> [!div class="mx-imgBorder"]  
+	> ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
+
+0. Choose **My Favorites** to quickly access any artifact or item that you've marked as a favorite. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Projects page, Favorites page](_img/favorites/project-page-favorites-horz.png)   
 
 ---
 

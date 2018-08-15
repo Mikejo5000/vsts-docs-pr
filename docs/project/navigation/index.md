@@ -18,20 +18,21 @@ ms.date: 07/21/2018
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
 ::: moniker range="vsts"
-The web portal for Azure DevOps Services is organized around a set of services&mdash;such as, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
+The web portal for Azure DevOps Services is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 
+- **New navigation**: **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**
+- **Previous navigation**: **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, **Wiki**, and **Analytics views**
+
+Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-The web portal for Team Foundation Server (TFS) is organized around a set of services&mdash;such as, **Dashboard**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
+The web portal for Team Foundation Server (TFS) is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
-> [!NOTE]   
-> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a team project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json). 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 Here's what you need to know to get up and running using the web portal.  
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
@@ -64,9 +65,14 @@ Here's what you need to know to get up and running using the web portal.
 
 ---
 
+
+> [!NOTE]   
+> The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that support connection to a  project, see [Tools and clients](../../user-guide/tools.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json). 
+
+
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-In **New navigation**, you select services&mdash;such as **Work**, **Code**, and **Build and Release**&mdash;from the sidebar and pages within those services. 
+In **New navigation**, you select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash;from the sidebar and pages within those services. 
 
 ![New navigation experience with vertical sidebar](_img/gif-images/vertical-nav.gif)
 
@@ -104,7 +110,7 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-To connect to the web portal, you need your user account added to a project. This is typically done by the [project administrator](../../organizations/security/add-users-team-project.md).
+To connect to the web portal, you need your user account added to a project. This is typically done by a [project administrator](../../organizations/security/add-users-team-project.md).
 
 Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL. Find out more about licensing from [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing).
 
@@ -149,7 +155,6 @@ Although you can access source code, work items, and builds from both clients, s
 </ul>
 </li>
 <li><p>Greater integration with work items and Office-integration clients. You can open a work item or query result in an office supported client.</p></li>
-<li><p>Additional text formatting options for rich-text fields in work item forms.</p></li>
 </ul></td>
 </tr>
 </tbody>
