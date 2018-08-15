@@ -15,18 +15,6 @@ sections:
 - title:
   items:
   - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
-- title: 
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-      - href: ../pipelines/get-started/pipelines-get-started.md
-        html: <p></p>
-        image:
-          src: ../_img/index/DevOpsIconPipelines40.svg
-        title: Start using Azure DevOps Pipelines  
 - title: 5-minute Quickstarts
   items:
   - type: list
