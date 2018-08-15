@@ -17,13 +17,9 @@ monikerRange: '>= tfs-2015'
 Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
-* The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track phases of Manual testing.
+* The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track stages of Manual testing.
 
-*****
-To use these features you must have either a [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
-subscription, or have installed the [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-available from Visual Studio Marketplace.
-*****
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 Because the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully featured Test management solution which works across all platforms and with all browsers, 
 we **recommend** you use this over Microsoft Test Manager for
@@ -37,7 +33,7 @@ solution for manual testing compared to Microsoft Test Manager.
 ## Manual Testing 
 
 The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully-featured test
-management solution spanning all phases of the testing lifecycle.
+management solution spanning all stages of the testing lifecycle.
 Itworks on all platforms (such as Linux, macOS,
 Windows, and others) and all browsers (such as Edge, Chrome, Firefox,
 and others). You can easily get started with using manual testing
@@ -70,7 +66,7 @@ and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**
 | [View test case references across test suites](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Assign multiple testers to test plans and test suites for user acceptance testing](../user-acceptance-testing.md#assign-and-invite-testers) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-\* These capabilities are included as part of the upcoming version of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
+\* These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
 extension available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Test authoring
@@ -189,7 +185,7 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 As clearly shown above, the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a much richer, faster, and easier-to-use
 solution for manual testing compared to the Test Center in MTM. It works on
 all platforms and all browsers, and has a rich and modern web UI that improves your testing
-experience across all phases of manual testing. 
+experience across all stages of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
 using MTM are stored in Azure DevOps or TFS, so existing

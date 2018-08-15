@@ -303,8 +303,7 @@ Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 <a name="Team ServicesAccount"></a>
 ### Q: What else can I do with an Azure DevOps subscription?
 
-**A**: To find your new subscription, go to ```https://{subscription-name}.visualstudio.com```. 
-Share your code, build, test, track work, and ship software - all in the cloud 
+**A**: Share your code, build, test, track work, and ship software - all in the cloud 
 using any tool or language. Learn more about how [Azure DevOps](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
@@ -532,9 +531,9 @@ allows you to run cloud-based load tests. See
 1. Add matching context parameters to your load test **runsettings** file.
    To do this expand **Run Settings** in the load test editor, right-click your **[Active]** run settings entry, then choose **Add Context Parameter**.
 
-If you are running load tests in the CI/CD pipeline where the URL of the app may change from environment to environment,
+If you are running load tests in the CI/CD pipeline where the URL of the app may change from stage to stage,
 you can use the [Cloud Load Test task](../../pipelines/tasks/test/cloud-based-load-test.md). It enables you to override the context parameter value from the task UI and
-use any environment variables defined in the pipeline to pass in the required information.
+use any stage variables defined in the pipeline to pass in the required information.
 
 ### Q: Can I get more detailed profiler information?
 
@@ -597,7 +596,7 @@ to resolve the issue.
 Status messages give you details about the load test run itself, 
 such as when a connection to the results database is lost. 
 Test errors relate to the test. View both these messages from the 
-Details tab on the progress graphs.
+Details page on the progress graphs.
 
 ![View status and error messages](_img/LoadTestInProgress.png)
 

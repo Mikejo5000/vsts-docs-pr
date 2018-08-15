@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Services - Test 
+title: Azure Test Plans Documentation 
 titleSuffix: Azure DevOps 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+description: Improve your overall code quality by using manual and exploratory testing services for your apps.
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,30 +18,11 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Test Plans</p>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Test Plans</p><br/>
         <h1>Azure Test Plans Documentation</h1>
-<p>Test early and often, setup test plans, track and report manual tests, run automated test suites or cloud-based load tests.</p><br/>
+<p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p><br/>
 <table border="0" class="cardsA">
 <tr>
-<td width="25%">
-                                <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Unit &amp; functional testing</h3>
-                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
 <td width="25%">
                                 <a href="/vsts/test/index">
                                     <div class="cardSize">
@@ -63,18 +44,19 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/test/load-test/index">
+                                <a href="/vsts/project/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_load-testing.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Load testing</h3>
-                                                    <p>Performance test your code with hundreds of thousands of users.</p>
+                                                    <h3>Request stakeholder feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -101,22 +83,40 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
-                                <a href="/vsts/project/feedback/index">
+                                <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Request stakeholder feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a
-                                                        work item form.</p>
+                                                    <h3>Unit &amp; functional testing</h3>
+                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+</tr>
+<tr>
+<td width="25%">
+                                <a href="/vsts/test/load-test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_load-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Load testing</h3>
+                                                    <p>Performance test your code with hundreds of thousands of users.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -151,7 +151,7 @@ featureFlags:
 </tr>
 </table>
 
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -159,7 +159,7 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
