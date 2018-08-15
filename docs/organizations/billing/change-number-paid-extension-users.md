@@ -13,15 +13,15 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Change the number of paid users for a Azure DevOps Services extension  
+# Change the number of paid users for a Azure DevOps Services extension
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
+To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.  
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.  
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-## Prerequisites  
+## Prerequisites 
 
 You need Azure DevOps Services [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 

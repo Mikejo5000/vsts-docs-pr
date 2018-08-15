@@ -1,6 +1,6 @@
 ---
-title: Billing topics and articles for Azure DevOps Services and Microsoft Team Foundation Server (TFS)  
-description: Azure DevOps Services charges appear on your monthly Azure bill, and supports Enterprise Agreement (EA), Cloud Solution Provider (CSP), Licensing, and Direct/Pay-As-You-Go Azure subscriptions
+title: Billing topics and articles for Azure DevOps Services and Microsoft Team Foundation Server (TFS)
+description: Azure DevOps Services charges appear on your monthly Azure bill, and supports Enterprise Agreement (EA), Cloud Solution Provider (CSP), Licensing, and Direct/Pay-As-You-Go Azure subscriptions  
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
@@ -11,15 +11,15 @@ author: chcomley
 ms.date: 04/06/2018
 monikerRange: '>= tfs-2015'
 ---
-# Billing  
+# Billing 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="vsts"
 
-## Billing for Azure DevOps Services  
+## Billing for Azure DevOps Services   
 
-All Azure DevOps Services charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more. 
+All Azure DevOps Services charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
 
 * [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Azure DevOps Services billing overview](overview.md)

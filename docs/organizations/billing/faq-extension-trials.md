@@ -19,16 +19,16 @@ monikerRange: 'vsts'
 
 <a name="organization-trial"></a>
 
-## Trial basics  
+## Trial basics 
 
-### Q: Is there a Azure DevOps Services organization trial?  
+### Q: Is there a Azure DevOps Services organization trial? 
 
 A: Instead of offering an organization trial, Azure DevOps Services provides an ongoing **free tier** of service. It includes the following features so that customers can try out the service: 
-* 5 Azure DevOps Services users: Basic. 
-* 5 Package Management users.  
+* 5 Azure DevOps Services users: Basic.
+* 5 Package Management users. 
 * Free tier of Microsoft-hosted continuous integration/continuous deployment (CI/CD): one concurrent job, up to four hours per month. 
 * One self-hosted CI/CD concurrent job. 
-* 20,000 virtual user minutes of cloud-based load testing per month. 
+* 20,000 virtual user minutes of cloud-based load testing per month.  
 
 You can also do a 30-day trial of [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web), [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed), and a number of extensions offered by 
 partners in the Visual Studio Marketplace. 
