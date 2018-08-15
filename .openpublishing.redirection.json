@@ -8071,7 +8071,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/billing/index.md",
+      "source_path": "docs/billing/index.yml",
       "redirect_url": "/vsts/organizations/billing/index",
       "redirect_document_id": true
     },

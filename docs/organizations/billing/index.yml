@@ -70,7 +70,7 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      - href: ../accounts/change-organization-location.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_setup.svg
@@ -108,7 +108,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Change number of paid extension users
-      - href: ../../marketplace/approve-extensions.md?toc=%2fvsts%2fbilling%2ftoc.json&%3bbc=%2fvsts%2fbilling%2fbreadcrumb%2ftoc.json&%3bview=vsts&view=vsts
+      - href: ../../marketplace/approve-extensions.md
         html: <p></p>
         image:
           src: 
