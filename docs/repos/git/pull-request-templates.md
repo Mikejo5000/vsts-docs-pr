@@ -20,6 +20,9 @@ A good pull request description can help reviewers be effective when reviewing p
 
 This article shows you how to get started with pull request templates.
 
+>[!NOTE]
+>Pull request templates can provide guidance for your pull request creators, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like master, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
+
 ## What is a pull request template?
 
 A pull request template is a block of text or markdown that can be added to your pull request description when the pull request is created. VSTS allows you to create the following type of pull request templates:
@@ -92,39 +95,3 @@ When a pull request is created, you can append optional pull request templates b
 
 >[!NOTE]
 >An optional pull request can be specified to override any matching default or branch specific pull request by appending `?template=name.md` to the querystring.
-
-
-
-## Pull request template locations
-
-
-Default template that applies to every PR targeting the repo:
-
-Must be named pull_request_template.md or .txt
-
-File location for default pull request template. Must be in 1 of 3 places:
-Root folder, .vsts folder, or docs folder
-
-Does it automatically append to the description? Or do you have to click it for a default template? Ok it automatically appears.
-
-
-
-Other non-default templates can be specified by choosing them from a drop down under the PR description box. They can also be specified by adding ?template=name.md (or txt) to the URL. Must specify extension if the file has one? Allowed to not?
-
-Must be in a folder named pull_request_template and this folder must be in the root folder, .vsts folder, or docs folder
-
-Branch specific templates will override the template if a user targets a specific branch
-
-Naming:
-Must match first level of branch name (i.e. master, dev, releases, feature, etc.)
-Can have an extension such as .md or .txt 
-Master.md would be displayed any time a PR targets master branch or any master/* branches.
-Releases.txt would be used any time a PR targets releases/* branches.
-Must be in the folder:
-PULL_REQUEST_TEMPLATE/branches
-"branches" must be lower case
-Like multiple templates, can be in the root or a subfolder of .vsts or docs
-
-
-
-
