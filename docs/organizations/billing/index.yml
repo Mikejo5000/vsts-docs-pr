@@ -143,7 +143,7 @@ sections:
         html:
         image:
           src:
-        title: Azure DevOps Services New User Guide
+        title: New User Guide
       - href: ../project/navigation/index.md
         html: <p></p>
         image:
