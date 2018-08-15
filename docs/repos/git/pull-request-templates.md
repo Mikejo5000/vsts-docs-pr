@@ -96,4 +96,4 @@ Select the name of the additional template to append its contents to the current
 ![Additional pull request template appended](_img/pull-request-templates/additional-pull-request-template-appended.png)
 
 >[!NOTE]
->An optional pull request can be specified to override any matching default or branch specific pull request by appending `?template=name.md` to the querystring.
+>You can specify a pull request template to override any matching default or branch specific pull request by appending `?template=name.md` to the querystring.
