@@ -1,25 +1,16 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Azure DevOps Services New User Guide
+title: Billing topics and articles for Azure DevOps Services and TFS
 metadata:
-  title: DevOps Services New User Guide documentation
-  description: Learn the basics of the Azure DevOps Services interface and some common tasks.
-  ms.date: 08/15/2018
+  title: Billing for Azure DevOps Services and TFS
+  description: Azure DevOps Services charges appear on your monthly Azure bill, and support Enterprise Agreement (EA), Cloud Solution Provider (CSP), Licensing, and Direct/Pay-As-You-Go Azure subscriptions
+  ms.date: 09/05/2018
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
   ms.author: chcomley
   author: chcomley
   manager: douge
-abstract:
-  description: New to Azure DevOps Services? Welcome! We'll walk you through the basics and some common tasks.
-  aside:
-    image:
-      alt: Get started logo
-      height: 133
-      width: 48
-      src: https://docs.microsoft.com/media/illustrations/biztalk-get-started-get-started.svg
-    title:
 sections:
 - title:
   items:
