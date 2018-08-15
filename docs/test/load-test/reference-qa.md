@@ -303,8 +303,7 @@ Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 <a name="Team ServicesAccount"></a>
 ### Q: What else can I do with an Azure DevOps subscription?
 
-**A**: To find your new subscription, go to ```https://{subscription-name}.visualstudio.com```. 
-Share your code, build, test, track work, and ship software - all in the cloud 
+**A**: Share your code, build, test, track work, and ship software - all in the cloud 
 using any tool or language. Learn more about how [Azure DevOps](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
@@ -597,7 +596,7 @@ to resolve the issue.
 Status messages give you details about the load test run itself, 
 such as when a connection to the results database is lost. 
 Test errors relate to the test. View both these messages from the 
-Details tab on the progress graphs.
+Details page on the progress graphs.
 
 ![View status and error messages](_img/LoadTestInProgress.png)
 

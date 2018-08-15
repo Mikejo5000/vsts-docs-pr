@@ -1,7 +1,7 @@
 ---
-title: Share code using Azure Artifacts 
+title: Azure Artifacts Documentation
 titleSuffix: Azure DevOps 
-description: Manage software packages and share code with Azure Artifacts
+description: Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds.
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,31 +18,12 @@ featureFlags:
 
 <div id="artifacts" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Artifacts</p>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Artifacts</p><br/>
 <h1>Azure Artifacts Documentation</h1>
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p><br/>
 
 <table border="0" class="cardsA">
 <tr>
-<td width="25%">
-                               <a href="/vsts/package/overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Package management overview</h3>
-                                                    <p>Use multiple feeds to organize and control access to your packages.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
 <td width="25%">
                                <a href="/vsts/package/get-started-nuget">
                                     <div class="cardSize">
@@ -100,12 +81,31 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+<td width="25%">
+                               <a href="/vsts/package/overview">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Package management overview</h3>
+                                                    <p>Use multiple feeds to organize and control access to your packages.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
 </tr>
 </table>
 </div>
 </div>
 
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -113,7 +113,7 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
