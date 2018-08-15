@@ -18,134 +18,51 @@ sections:
 - title:
   items:
   - html: All Azure DevOps Services charges appear on your monthly Azure bill. <a href=”https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/>Azure DevOps Services pricing.</a><a href=”overview.md>Billing overview for Azure DevOps Services.</a>
-- title: 5-minute Quickstarts
+- title: 5-minute quickstarts
   items:
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
-      - href: ../../user-guide/sign-up-invite-teammates.md
+      - href: set-up-billing-for-your-organization-vs.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_get-started.svg
-        title: Sign up and invite teammates
-      - href: code-with-git.md
+          src: 
+        title: Set up billing
+      - href: buy-basic-access-add-users.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/logos/logo_git-color.svg
-        title: Code with Git
-      - href: plan-track-work.md
+          src: 
+        title: Pay for Azure DevOps Services users
+      - href: buy-more-build-vs.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_quick-start.svg
-        title: Plan & track work
-      - href: add-run-manual-tests.md
+        title: Buy CI/CD
+      - href: try-additional-features-vs.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_test.svg
-        title: Add & run manual tests
-      - href: vsts/marketplace/install-vsts-extension.md
+          src: 
+        title: Start free trials
+      - href: buy-load-testing-vs.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_extensions.svg
-        title: Install a Marketplace extension
-      - href: ../organizations/security/view-permissions.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-        title: View permissions
-      - href: index.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_management.svg
-        title: Manage a project
-      - href:  index.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_account-management.svg
-        title: Get started as an admin
+          src: 
+        title: Buy cloud-based load testing
 
-- title: Step-by-step Tutorials
+- title: Step-by-step tutorials
   items:
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
-      - href: ../../project/navigation/set-favorites.md
+      - href: ../accounts/connect-organization-to-aad.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_setup.svg
-        title: Set favorites
-      - href: ../../boards/work-items/follow-work-items.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_pull-request.svg
-        title: Follow work & pull requests
-      - href: .md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/toolbars/member.svg
-        title: Get started as a stakeholder
-      - href: vsts/organizations/accounts/add-organization-users-from-user-hub.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-        title: Add & manage users
-      - href: vsts/organizations/security/change-individual-permissions.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-        title: Change individual permissions
-      - href: vsts/organizations/security/restrict-access.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_security-management.svg
-        title: Grant or restrict permissions to select tasks
-      - href: vsts/organizations/settings/work/customize-process.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_config-tools.svg
-        title: Customize a project
-
-- title: Concepts
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-      - href: key-concepts.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        title: Key concepts
-      - href: source-control.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_xplat-code.svg
-        title: Source control
-      - href: ../work/backlogs/overview.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_kaban.svg
-        title: Kanban & Agile tools
-      - href: tools.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_tools.svg
-        title: Clients & tools
-      - href: roles.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-        title: Software development roles
-      - href: about-vsts-tfs.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        title: What's the difference between Azure DevOps Services and TFS?
+          src: 
+        title: Connect Azure DevOps Services to Azure Active Directory
 
 - title: How-to guides
   items:
@@ -154,11 +71,26 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: docs/organizations/projects/connect-to-projects.md
+      - href: add-backup-billing-managers.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_accessibility.svg
-        title: Sign in to a web or a client
+          src: 
+        title: Add a backup billing manager
+      - href: change-azure-subscription.md
+        html: <p></p>
+        image:
+          src: 
+        title: Change Azure subscription
+      - href: reduce-cancel-paid-vsts-users.md
+        html: <p></p>
+        image:
+          src: 
+        title: Change number of paid users
+      - href: vsts-billing-faq.md
+        html: <p></p>
+        image:
+          src: 
+        title: Billing FAQ
 
 - title: Reference
   items:
@@ -167,26 +99,21 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../project/navigation/keyboard-shortcuts.md
+      - href: ../security/permissions.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
-        title: Keyboard shortcuts
-      - href: ../project/wiki/markdown-guidance.md
+          src: 
+        title: Permissions
+      - href: ../security/access-levels.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
-        title: Markdown guidance
-      - href: .work-team-explorer.md
+          src: 
+        title: About access levels
+      - href: ../security/permissions-access.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
-        title: Navigate in Team Explorer
-      - href: faqs.md
-        html: <p></p>
-        image:
-          src: https://docs.microsoft.com/media/common/i_reference.svg
-        title: FAQs
+          src: 
+        title: Default permissions and access
 
 - title: Resources
   items:
@@ -204,24 +131,24 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_agile.svg
-        title: Project management
+        title: Project Management
       - href: ../organizations/security/index.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_security-management.svg
         title: Security & Identity
-      - href: https://docs.microsoft.com/visualstudio/?view=vsts
+      - href: ../accounts/index.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
-        title: Visual Studio IDE
-      - href: https://code.visualstudio.com/docs
+          src: https://docs.microsoft.com/media/common/i_portal.svg
+        title: Organization Management
+      - href: https://docs.microsoft.com/en-us/visualstudio/subscriptions/vscloud-overview
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
-        title: Visual Studio Code
-      - href: https://docs.microsoft.com/visualstudio/mac?view=vsts
+          src: 
+        title: Buy Visual Studio cloud subscriptions
+      - href: xamarin-univ.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-        title: Visual Studio for Mac
+          src: 
+        title: Buy Xamarin University subscriptions
