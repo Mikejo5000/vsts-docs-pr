@@ -22,13 +22,22 @@ This article shows you how to get started with pull request templates.
 
 ## What is a pull request template?
 
-VSTS allows you to create the following type of pull request templates.
+A pull request template is a block of text or markdown that can be added to your pull request description when the pull request is created. VSTS allows you to create the following type of pull request templates:
 
-- A default template that is automatically appended to the description when a pull request is created
-- A branch specific template that is automatically appended to the description when a pull request is created
-- Additional template that can optionally be appended to the description by the pull request creator
+- Default - these pull request templates are automatically applied to pull request descriptions for all pull requests in the repo, unless a branch specific pull request template applies
+- Branch specific - these pull request templates are automatically applied to pull requests targeting a specific branch
+- Optional - these pull request templates can be optionally added by the pull request creator
 
-A pull request template is a markdown file located in a designated folder. Multiple pull request templates can be present.
+A pull request template is a markdown file or text file located in a designated folder. When the pull request template is applied, the contents of the pull request template are placed in the pull request description. If the following snippet was the default pull request template for a repo, it would automatically be set as the description for any pull request into that repo (unless there was a more specific branch pull request template).
+
+```
+Thank you for your contribution to the Fabrikam Fiber repo. Before submitting this PR, please make sure:
+
+[] Your code builds clean without any errors or warnings
+[] You are using approved terminology
+[] If your PR covers more than 25 files, please break it up into smaller PRs if possible
+```
+
 ## Pull request template locations
 
 
