@@ -157,7 +157,7 @@ Account owners and members of the Project Collection Administators group configu
 0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_img/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
 0. From there, you can choose a page from the list of settings. Settings are organized based on the service they support. Expand or collapse the major sections such as **Work** and **CI/CD** to select a page from the list. 
 
