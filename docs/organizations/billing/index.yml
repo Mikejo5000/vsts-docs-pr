@@ -64,7 +64,7 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../accounts/change-organization-location.md
+      - href: ../accounts/connect-organization-to-aad.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_setup.svg
