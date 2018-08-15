@@ -11,15 +11,15 @@ author: chcomley
 ms.date: 04/06/2018
 monikerRange: '>= tfs-2015'
 ---
-# Billing
+# Billing  
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="vsts"
 
-## Billing for Azure DevOps Services
+## Billing for Azure DevOps Services  
 
-All Azure DevOps Services charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
+All Azure DevOps Services charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more. 
 
 * [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Azure DevOps Services billing overview](overview.md)
@@ -28,9 +28,9 @@ All Azure DevOps Services charges appear on your monthly Azure bill. Azure suppo
 
 ::: moniker range=">= tfs-2015 < vsts"
 
-## Billing for Microsoft Team Foundation Server (TFS)
+## Billing for Microsoft Team Foundation Server (TFS)  
 
-You can also make some purchases for TFS on your monthly Azure bill.
+You can also make some purchases for TFS on your monthly Azure bill.  
 
 * [TFS pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 * [How to buy TFS CALs or access to the TFS Test Services page](buy-access-tfs-test-hub.md)
@@ -39,7 +39,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ::: moniker range="vsts"
 
-## 5-Minute quickstarts
+## 5-Minute quickstarts  
 
 * [Set up billing for Azure DevOps Services](set-up-billing-for-your-organization-vs.md)
 * [Start free trials for paid Azure DevOps Services features and extensions](try-additional-features-vs.md)

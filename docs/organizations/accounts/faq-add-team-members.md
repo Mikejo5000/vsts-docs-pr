@@ -12,17 +12,17 @@ ms.date: 4/04/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding members to projects in Azure DevOps Services
+# Troubleshoot adding members to projects in Azure DevOps Services  
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="cant-add-users"></a>
 
-**Q: Why can't I add any more members to my project?**
+**Q: Why can't I add any more members to my project?**  
 
-A: Your Azure DevOps Services organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers. 
+A: Your Azure DevOps Services organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers.
 
-To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your Azure DevOps Services organization, [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time.
+To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your Azure DevOps Services organization, [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time.  
 
 If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).
 

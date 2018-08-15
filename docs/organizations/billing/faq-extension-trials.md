@@ -13,27 +13,27 @@ monikerRange: 'vsts'
 ---
 
 
-# Frequently asked questions about trials for Azure DevOps Services
+# Frequently asked questions about trials for Azure DevOps Services  
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="organization-trial"></a>
 
-## Trial basics
+## Trial basics  
 
-### Q: Is there a Azure DevOps Services organization trial?
+### Q: Is there a Azure DevOps Services organization trial?  
 
 A: Instead of offering an organization trial, Azure DevOps Services provides an ongoing **free tier** of service. It includes the following features so that customers can try out the service: 
 * 5 Azure DevOps Services users: Basic. 
-* 5 Package Management users.
+* 5 Package Management users.  
 * Free tier of Microsoft-hosted continuous integration/continuous deployment (CI/CD): one concurrent job, up to four hours per month. 
 * One self-hosted CI/CD concurrent job. 
-* 20,000 virtual user minutes of cloud-based load testing per month.  
+* 20,000 virtual user minutes of cloud-based load testing per month. 
 
 You can also do a 30-day trial of [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web), [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed), and a number of extensions offered by 
-partners in the Visual Studio Marketplace.  
+partners in the Visual Studio Marketplace. 
 
-### Q: How many times can I do a trial for Test Manager, Package Management, or paid extensions offered by partners?
+### Q: How many times can I do a trial for Test Manager, Package Management, or paid extensions offered by partners? 
 
 A:  You can try a feature or extension only once per organization. Most trials are 30 days, and you can choose when to start the trial. Each trial is independent. For example, you can try Test Manager this month and Package Management several months later.
 
