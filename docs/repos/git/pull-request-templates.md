@@ -68,9 +68,22 @@ For example, a branch specific pull request template that should apply to all pu
 - `<repository root>\.vsts\pull_request_template\branches\`
 - `<repository root>\docs\pull_request_template\branches\`
 
-Just like default pull request templates, multiple locations are provided to give you flexibility in where you store your branch specific pull request templates in your repo. When a pull request is created VSTS searches the previous folders in the order given for a branch specific pull request template, and uses the first one it finds. If no branch specific pull request template is found, VSTS then searches for a default pull request template as described in the previous section.
+Just like default pull request templates, multiple locations are provided to give you flexibility in where you store branch specific pull request templates in your repository. When a pull request is created, VSTS searches the previous folders in the order given for a branch specific pull request template, and uses the first one it finds. If no branch specific pull request template is found, VSTS then searches for a default pull request template as described in the previous [Default pull request templates](#default-pull-request-templates) section.
 
 ## Additional pull request templates
+
+In addition to the default and branch specific pull request templates, you can configure additional pull request templates. These can be `.md` or `.txt` files, located in one of the following locations.
+
+- `<repository root>\pull_request_template\`
+- `<repository root>\.vsts\pull_request_template\`
+- `<repository root>\docs\pull_request_template\`
+
+When a pull request is created, you can append optional pull request templates by choosing them from the pull request template drop-down. The names in the drop-down are based on the file names of the templates.
+
+>[!NOTE]
+>An optional pull request can be specified to override any matching default or branch specific pull request by appending `?template=name.md` to the querystring.
+
+
 
 ## Pull request template locations
 
