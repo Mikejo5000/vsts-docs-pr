@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Azure DevOps Services New User Guide
+title: Billing for Azure DevOps Services 
 metadata:
   title: Billing topics and articles for Azure DevOps Services and TFS
   description: Learn the basics of the Azure DevOps Services interface and some common tasks.
@@ -12,24 +12,6 @@ metadata:
   author: chcomley
   manager: douge
 sections:
-- title: Billing for Azure DevOps Services
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-      - href: https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/
-        html: <p></p>
-        image:
-          src: 
-        title: Azure DevOps Services pricing  
-      - href: overview.md
-        html: <p></p>
-        image:
-          src: 
-        title: Azure DevOps Services billing overview  
-
 - title: 5-minute Quickstarts
   items:
   - type: list
