@@ -57,12 +57,16 @@ You build your project plan by creating a backlog of work items that represent t
 [![Define stories](_img/overview/gs-planning-define-stories.png)](create-your-backlog.md)[![Organize backlog](_img/overview/gs-planning-organize-backlog.png)](organize-backlog.md)[![Manage bugs](_img/overview/gs-planning-manage-bugs.png)](manage-bugs.md)[![Manage issues](_img/overview/gs-planning-manage-issues.png)](manage-issues-impediments.md)
 
 
-<!---
-## Customize your backlogs
+::: moniker range="vsts"
+## Customize your backlogs 
+If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+::: moniker-end
+ 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+## Customize your backlogs 
+If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
+::: moniker-end
 
-For an overview of all your customization options, see [Customize your work tracking experience](../../reference/customize-work.md). 
-
--->
 
 ## Try this next  
 
