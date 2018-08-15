@@ -1,5 +1,5 @@
 ### YamlMime:YamlDocument
-documentType: Conceptual
+documentType: LandingData
 title: Azure DevOps Services New User Guide
 metadata:
   title: Billing topics and articles for Azure DevOps Services and TFS
@@ -29,7 +29,6 @@ sections:
         image:
           src: 
         title: Azure DevOps Services billing overview  
-
 - title: 5-minute Quickstarts
   items:
   - type: list
