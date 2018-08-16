@@ -21,17 +21,11 @@ A good pull request description can provide guidance to pull request creators, a
 This article shows you how to get started with pull request templates.
 
 >[!NOTE]
->Pull request templates can provide guidance for your pull request creators, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like master, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
+>Pull request templates can provide guidance, but are advisory only. Use branch policies to enforce best practices such as requiring pull requests for key branches like master, requiring a successful build, and enforcing required reviewers. For more information, see [branch policies](branch-policies-overview.md).
 
 ## What is a pull request template?
 
-A pull request template is a file containing [markdown](../../project/wiki/markdown-guidance.md) text that is added to your pull request description when the pull request is created. VSTS allows you to create the following type of pull request templates:
-
-- A **default** pull request template that is automatically applied for all new pull requests in the repository, unless overridden by a branch specific pull request template
-- **Branch specific** pull request templates that are automatically applied to pull requests targeting a specific branch
-- **Additional** pull request templates that can be optionally added by the pull request creator
-
-A pull request template is a markdown file or text file located in a designated folder. When the pull request template is applied, the contents of the pull request template are placed in the pull request description. If the following snippet was the default pull request template for a repository, it would automatically be set as the description for any pull request into that repository, unless there was a more specific branch pull request template that applied.
+A pull request template is a file containing [markdown](../../project/wiki/markdown-guidance.md) text that is added to your pull request description when the pull request is created. 
 
 ```markdown
 Thank you for your contribution to the Fabrikam Fiber repo. 
@@ -42,13 +36,19 @@ Before submitting this PR, please make sure:
 - [ ] You have added unit tests
 ```
 
+VSTS allows you to create the following type of pull request templates:
+
+- A **default** pull request template that is automatically applied for all new pull requests in the repository, unless overridden by a branch specific pull request template
+- **Branch specific** pull request templates that are automatically applied to pull requests targeting a specific branch
+- **Additional** pull request templates that can be optionally added by the pull request creator
+
 ## Default pull request templates
 
 Default pull request templates are automatically applied to the description field when a new pull request is created. To configure your repository with a default pull request template, create a file named `pull_request_template.md` or `pull_request_template.txt` and save it in your repository in one of the following folders.
 
-- The root folder of the repository
 - A folder named `.vsts` that is contained in the root folder of the repository
 - A folder name `docs` that is contained in the root folder of the repository
+- The root folder of the repository
 
 >[!NOTE]
 >Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, VSTS searches the designated folders in the order given, and uses the first default pull request template it finds.
@@ -68,15 +68,15 @@ Branch specific pull request templates can be configured for pull requests that 
 
 Branch specific pull request templates must be saved in your repository using the following folder hierarchy: `pull_request_template/branches/`. These folders must be based in one of the following folders in your repository.
 
-- The root folder of the repository
 - A folder named `.vsts` that is contained in the root folder of the repository
 - A folder name `docs` that is contained in the root folder of the repository
+- The root folder of the repository
 
 For example, a branch specific pull request template that should apply to all pull requests into the `dev` branch would be named `dev.md` or `dev.txt` and located in one of the following locations.
 
-- `<repository root>/pull_request_template/branches/`
 - `<repository root>/.vsts/pull_request_template/branches/`
 - `<repository root>/docs/pull_request_template/branches/`
+- `<repository root>/pull_request_template/branches/`
 
 Just like default pull request templates, multiple locations are provided to give you flexibility in where you store branch specific pull request templates. When a pull request is created, VSTS searches the designated folders in the order given for a branch specific pull request template, and uses the first one it finds that matches the branch name. If no branch specific pull request template is found, VSTS then searches for a default pull request template as described in the previous [Default pull request templates](#default-pull-request-templates) section.
 
@@ -86,9 +86,9 @@ Just like default pull request templates, multiple locations are provided to giv
 
 In addition to the default and branch specific pull request templates, you can configure additional pull request templates. These can be `.md` or `.txt` files, located in one of the following folders.
 
-- `<repository root>/pull_request_template/`
 - `<repository root>/.vsts/pull_request_template/`
 - `<repository root>/docs/pull_request_template/`
+- `<repository root>/pull_request_template/`
 
 When a pull request is created, you can append any of the available pull request templates by choosing them from the pull request template drop-down. The names in the drop-down are based on the file names of the templates.
 
