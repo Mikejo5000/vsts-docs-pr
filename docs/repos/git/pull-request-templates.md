@@ -96,7 +96,7 @@ When a pull request is created, you can append any of the available pull request
 In the following example three templates are listed.
 
 - `dev.md` - This is the branch specific template that was applied by default to this pull request into the dev branch, as indicated by the **default** message listed after the filename.
-- `additional.md` - This is an optional template.
+- `additional.md` - This is an additional template.
 - `pull_request_template.md` - This is normally the default template but it was overridden by the `dev.md` branch specific template in this pull request. Even though it was not added by default, it can still be applied by selecting it from the list.
 
 ![Additional pull request template](_img/pull-request-templates/additional-pull-request-template.png)
