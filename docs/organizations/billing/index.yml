@@ -38,7 +38,7 @@ sections:
       - href: buy-more-build-vs.md
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_quick-start.svg
+          src: 
         title: Buy CI/CD
       - href: try-additional-features-vs.md
         html: <p></p>
@@ -58,7 +58,7 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../accounts/connect-organization-to-aad.md
+      - href: ../accounts/connect-organization-to-aad.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
         html: <p></p>
         image:
           src: 
@@ -99,17 +99,17 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: ../security/permissions.md
+      - href: ../security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
         html: <p></p>
         image:
           src: 
         title: Permissions
-      - href: ../security/access-levels.md
+      - href: ../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
         html: <p></p>
         image:
           src: 
         title: About access levels
-      - href: ../security/permissions-access.md
+      - href: ../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
         html: <p></p>
         image:
           src: 

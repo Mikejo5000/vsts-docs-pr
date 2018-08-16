@@ -1,5 +1,5 @@
 - name: Billing
-  href: index.md
+  href: index.yml
 - name: Overview
   items:
   - name: Billing overview 
@@ -53,7 +53,7 @@
     - name: "CSPs: Buy VSTS for your customers"
       href: csp/buy-csp-vsts.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
-      href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp
+      href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: "CSPs: Buy App Center resources"
       href: csp/buy-vs-app-center.md
 - name: Troubleshooting
