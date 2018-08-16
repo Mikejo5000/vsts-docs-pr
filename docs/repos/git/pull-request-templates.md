@@ -49,7 +49,7 @@ The type of pull request template is determined by its filename and folder locat
 Default pull request templates are automatically applied to the description field when a new pull request is created. To configure your repository with a default pull request template, create a file named `pull_request_template.md` or `pull_request_template.txt` and save it in the default branch of your repository in one of the following folders.
 
 - A folder named `.vsts` that is contained in the root folder of the repository
-- A folder name `docs` that is contained in the root folder of the repository
+- A folder named `docs` that is contained in the root folder of the repository
 - The root folder of the repository
 
 Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, VSTS searches the designated folders in the order given, and uses the first default pull request template it finds.
@@ -70,7 +70,7 @@ Branch specific pull request templates can be configured for pull requests that 
 Branch specific pull request templates must be saved in the default branch of your repository using the following folder hierarchy: `pull_request_template/branches/`. These folders must be based in one of the following folders in your repository.
 
 - A folder named `.vsts` that is contained in the root folder of the repository
-- A folder name `docs` that is contained in the root folder of the repository
+- A folder named `docs` that is contained in the root folder of the repository
 - The root folder of the repository
 
 For example, a branch specific pull request template that should apply to all pull requests into the `dev` branch would be named `dev.md` or `dev.txt` and located in one of the following locations.
