@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot managing group-based licensing
-description: Troubleshoot managing group-based licensing: remove group, remove group rule, user access level, and project membership
+description: "Troubleshoot managing group-based licensing: remove group, remove group rule, user access level, and project membership"
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
