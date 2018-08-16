@@ -42,6 +42,8 @@ VSTS allows you to create the following type of pull request templates:
 - **Branch specific** pull request templates that are automatically applied to pull requests targeting a specific branch
 - **Additional** pull request templates that can be optionally added by the pull request creator
 
+The type of pull request template is determined by the filename and folder location of the pull request template, as covered in the following sections. Note that the filenames and folder locations are not case sensitive.
+
 ## Default pull request templates
 
 Default pull request templates are automatically applied to the description field when a new pull request is created. To configure your repository with a default pull request template, create a file named `pull_request_template.md` or `pull_request_template.txt` and save it in your repository in one of the following folders.
@@ -50,8 +52,7 @@ Default pull request templates are automatically applied to the description fiel
 - A folder name `docs` that is contained in the root folder of the repository
 - The root folder of the repository
 
->[!NOTE]
->Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, VSTS searches the designated folders in the order given, and uses the first default pull request template it finds.
+Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, VSTS searches the designated folders in the order given, and uses the first default pull request template it finds.
 
 When a new pull request is created in the repository, unless a more specific branch pull request template applies, the contents of the default pull request template are used to pre-populate the description field in the pull request.
 
