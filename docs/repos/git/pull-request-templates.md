@@ -42,7 +42,7 @@ VSTS allows you to create the following type of pull request templates:
 - **Branch specific** pull request templates that are automatically applied to pull requests targeting a specific branch
 - **Additional** pull request templates that can be optionally added by the pull request creator
 
-The type of pull request template is determined by its filename and folder location, as covered in the following sections. Note that the filenames and folder locations are not case sensitive.
+The type of pull request template is determined by its filename and folder location, as covered in the following sections. The filenames and folder locations are not case sensitive.
 
 ## Default pull request templates
 
@@ -58,7 +58,7 @@ When a new pull request is created in the repository, unless a more specific bra
 
 ![Default pull request template](_img/pull-request-templates/default-pull-request-template.png)
 
-You can edit or add to this description and append additional pull request templates if desired by selecting them from the **Add a template** drop-down.
+You can edit or add to this description and append [additional pull request templates](#additional-pull-request-templates) if desired by selecting them from the **Add a template** drop-down.
 
 >[!NOTE]
 >When a default or branch specific pull request template is automatically applied, it replaces the standard commit messages that are usually used for the default description. You can add them back by selecting **Add commit messages**.
