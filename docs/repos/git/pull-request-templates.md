@@ -54,7 +54,7 @@ Default pull request templates are automatically applied to the description fiel
 
 Multiple locations are provided to give you flexibility in where you store your pull request templates. When a pull request is created, VSTS searches the designated folders in the order given, and uses the first default pull request template it finds.
 
-When a new pull request is created in the repository, unless a more specific branch pull request template applies, the contents of the default pull request template are used to pre-populate the description field in the pull request.
+When a new pull request is created in the repository, unless a [branch specific pull request template](#branch-specific-pull-request-templates) applies, the contents of the default pull request template are used to pre-populate the description field in the pull request.
 
 ![Default pull request template](_img/pull-request-templates/default-pull-request-template.png)
 
