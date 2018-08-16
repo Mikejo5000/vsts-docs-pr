@@ -127,7 +127,7 @@
 - name: Resources
   items:
   - name: Organization Management 
-    href: ../accounts/index.md
+    href: ../accounts/index.yml
   - name: TFS Server Administration 
     href: /tfs/server/index
   - name: Authentication guidance for REST APIs

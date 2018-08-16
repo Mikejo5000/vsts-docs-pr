@@ -226,7 +226,7 @@
   - name: "Manage Extensions (Marketplace)"
     href: ../../marketplace/index.md
   - name: Organization Management
-    href: ../accounts/index.md
+    href: ../accounts/index.yml
   - name: Billing
     href: ../billing/index.yml
 

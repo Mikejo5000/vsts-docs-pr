@@ -122,6 +122,12 @@ sections:
     className: cardsM
     columns: 3
     items:
+      - href: ../../user-guide/index.yml
+        html:
+        image:
+          src: https://docs.microsoft.com/media/common/i_reference.svg
+
+        title: New User Guide
       - href: ../project/navigation/index.md
         html: <p></p>
         image:
@@ -137,10 +143,10 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_security-management.svg
         title: Security & Identity
-      - href: ../accounts/index.md
+      - href: ../accounts/index.yml
         html: <p></p>
         image:
-          src: https://docs.microsoft.com/media/common/i_portal.svg
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Organization Management
       - href: https://docs.microsoft.com/en-us/visualstudio/subscriptions/vscloud-overview
         html: <p></p>

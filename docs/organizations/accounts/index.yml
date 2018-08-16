@@ -1,0 +1,153 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Organization management for Azure DevOps Services
+metadata:
+  title: Azure DevOps Services organization management
+  description: Sign up for an Azure DevOps Services organization, add users, and manage permissions and access.
+  ms.date: 09/05/2018
+  ms.prod: devops
+  ms.technology: vs-ide-code-analysis
+  ms.topic: landing-page
+  ms.author: chcomley
+  author: chcomley
+  manager: douge
+sections:
+- title:
+  items:
+  - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
+- title:
+  items:
+  - html: <a href=”https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/>Azure DevOps Services pricing.</a><a href=”overview.md>Billing overview for Azure DevOps Services.</a>
+- title: 5-minute quickstarts
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: create-organization-msa-or-work-student.md
+        html: <p></p>
+        image:
+          src: 
+        title: Create your Azure Devops Services organization
+      - href: ../billing/buy-basic-access-add-users.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Pay for users
+      - href: ../billing/buy-more-build-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Buy CI/CD
+      - href: ../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: Try extensions for free
+      - href: buy-load-testing-vs.md
+        html: <p></p>
+        image:
+          src: 
+        title: Buy cloud-based load testing
+
+- title: Step-by-step tutorials
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../accounts/connect-organization-to-aad.md
+        html: <p></p>
+        image:
+          src: 
+        title: Connect Azure DevOps Services to Azure Active Directory
+
+- title: How-to guides
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../settings/set-your-preferences.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Set your preferences
+      - href: ../projects/create-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Create a project
+      - href: add-organization-users-from-user-hub.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Add users
+      - href: use-personal-access-tokens-to-authenticate.md
+        html: <p></p>
+        image:
+          src: 
+        title: Authenticate with personal access tokens
+
+- title: Reference
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../security/permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Permissions
+      - href: ../security/access-levels.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: About access levels
+      - href: ../security/permissions-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: 
+        title: Default permissions and access
+
+- title: Resources
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+     - href: ../../user-guide/index.yml
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_reference.svg
+        title: New User Guide
+      - href: ../project/navigation/index.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_portal.svg
+        title: Navigation Basics
+      - href: ../organizations/projects/index.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_agile.svg
+        title: Project Management
+      - href: ../organizations/security/index.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_security-management.svg
+        title: Security & Identity
+      - href: ../../marketplace/index.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_extensions.svg
+        title: Manage Extensions
+      - href: ../../service-hooks/index.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_service-hooks.svg
+        title: Service Hooks
