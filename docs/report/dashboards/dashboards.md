@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Add and manage dashboards
 
-**Azure DevOps | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 
