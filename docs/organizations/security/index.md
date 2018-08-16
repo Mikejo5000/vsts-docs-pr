@@ -58,6 +58,7 @@ For anyone to access a team project, you must add them to a security group. For 
 - [Change access levels (TFS)](change-access-levels.md)
 
 ## Reference
+
 - [Default permission and access assignments](permissions-access.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)  
@@ -67,7 +68,7 @@ For anyone to access a team project, you must add them to a security group. For 
  
 - [Account Management (VSTS)](../accounts/index.md)
 - [Server Administration (TFS)](/tfs/server/index)
-- [Billing](../../billing/index.yml)
+- [Billing](../billing/index.yml)
 - [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md)
 - [VSTS Data Protection Overview](../../articles/team-services-security-whitepaper.md)
 - [Technical Articles](../../articles/index.md) 
