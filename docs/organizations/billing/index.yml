@@ -18,7 +18,7 @@ sections:
 - title:
   items:
   - html: All Azure DevOps Services charges appear on your monthly Azure bill. <a href=”https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/>Azure DevOps Services pricing.</a><a href=”overview.md>Billing overview for Azure DevOps Services.</a>
-- title: 5-minute quickstarts
+- title: 5-minute Quickstarts
   items:
   - type: list
     style: cards
@@ -29,7 +29,7 @@ sections:
         html: <p></p>
         image:
           src: 
-        title: Set up billing
+        title: Set up Billing
       - href: buy-basic-access-add-users.md
         html: <p></p>
         image:
