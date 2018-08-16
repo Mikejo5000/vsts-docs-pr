@@ -93,7 +93,7 @@ In addition to the default and branch specific pull request templates, you can c
 
 When a pull request is created, you can append any of the available pull request templates by choosing them from the **Add a template** drop-down. The names in the drop-down are based on the file names of the templates.
 
-In this example three templates are listed.
+In the following example three templates are listed.
 
 - `dev.md` - This is the branch specific template that was applied by default to this pull request into the dev branch, as indicated by the **default** message listed after the filename.
 - `additional.md` - This is an optional template.
