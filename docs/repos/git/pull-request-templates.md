@@ -1,6 +1,6 @@
 ---
-title: Improve your pull request descriptions with pull request templates | VSTS & TFS
-description:  Learn how to improve pull request descriptions using pull request templates
+title: Improve your pull request descriptions using pull request templates | VSTS & TFS
+description:  Learn how to standardize pull request descriptions using pull request templates
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -12,11 +12,11 @@ ms.date: 04/03/2018
 monikerRange: 'vsts'
 ---
 
-# Improve pull request descriptions with templates
+# Improve pull request descriptions using templates
 
 #### VSTS 
 
-A good pull request description can provide guidance to pull request creators, and help reviewers be more effective when reviewing pull requests. Pull request templates can help your developers create good pull request descriptions that meet your organization's standards.
+Writing good pull request descriptions is a great way to help reviewers know what to expect when reviewing code. They're also a great way to help track things that should be done for every change, such as testing, adding unit tests, and updating documentation. Pull request templates can help your developers create great pull request descriptions that meet your organization's standards.
 
 This article shows you how to get started with pull request templates.
 
