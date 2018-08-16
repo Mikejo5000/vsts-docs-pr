@@ -126,7 +126,6 @@ sections:
         html:
         image:
           src: https://docs.microsoft.com/media/common/i_reference.svg
-
         title: New User Guide
       - href: ../project/navigation/index.md
         html: <p></p>
