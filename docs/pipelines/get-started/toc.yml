@@ -1,0 +1,11 @@
+- name: Pipelines get started
+  href: index.md
+  items:
+  - name: Get started guide
+    href: pipelines-get-started.md
+  - name: Why Use Pipelines?
+    href: why-use-pipelines.md
+  - name: Create your first build and release pipelines
+    href: ../get-started-designer.md
+  - name: Key Concepts
+    href: key-pipelines-concepts.md

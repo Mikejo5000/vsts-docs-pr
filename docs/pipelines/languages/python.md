@@ -23,7 +23,7 @@ This guide explains creating pipelines for Python projects. Before this guidance
 
 You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
+Create a file named **azure-pipelines.yml** in the root of your repository. Then, add applicable jobs and tasks to the YAML file as described below.
 
 ## Use a specific Python version
 
@@ -31,7 +31,7 @@ Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set th
 
 ```yaml
 # https://aka.ms/yaml
-queue: 'Hosted Linux Preview'
+pool: 'Hosted Linux Preview'
 steps:
 
 - task: UsePythonVersion@0
@@ -42,13 +42,13 @@ steps:
 
 ## Use multiple Python versions
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
+To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many concurrent jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
-phases:
-- phase: 'Test'
-  queue:
+jobs:
+- job: 'Test'
+  pool:
     name: 'Hosted Linux Preview'
     parallel: 1
     matrix:
@@ -88,8 +88,8 @@ Add the following YAML to run a Python script file named `myPythonScript.py`.
 ```yaml
 - task: PythonScript@0
   inputs:
-    targetType: 'filePath'
-    filePath: 'src/myPythonScript.py'
+    scriptSource: 'filePath'
+    scriptPath: 'src/myPythonScript.py'
     arguments: ''
 ```
 
@@ -172,11 +172,21 @@ Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and
 
 ## Retain artifacts
 
+Build an sdist of your package.
+
+```yaml
+- script: 'python setup.py sdist'
+  displayName: Build sdist
+```
+
 Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
 
 ```yaml
 - task: PublishBuildArtifacts@1
-  pathToPublish: 'dist'
+  displayName: 'Publish Artifact: dist'
+  inputs:
+    PathtoPublish: dist
+    ArtifactName: dist
 ```
 
 ## Related extensions

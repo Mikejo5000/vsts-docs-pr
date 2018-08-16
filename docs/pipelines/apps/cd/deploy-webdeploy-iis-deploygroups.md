@@ -1,6 +1,6 @@
 ---
 title: Deploy to an IIS web server on a Windows Virtual Machine
-description: Deploy an ASP.NET or Node web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
+description: Deploy an ASP.NET or Node.js web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,28 +14,28 @@ monikerRange: '>= tfs-2017'
 
 # Deploy to a Windows Virtual Machine
 
-**VSTS | TFS 2018**
+**Azure Pipelines | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using
-Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
+We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
+Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
-## Define your CI build process
+## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build process that publishes your web deployment package. To set up a CI build process, see:
+You'll need a continuous integration (CI) build pipeline that publishes your web deployment package. To set up a CI build pipeline, see:
 
 * [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
 * [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
-* [Build your Node app with Gulp](../nodejs/build-gulp.md)
+* [Build your Node.js app with gulp](../../languages/javascript.md)
 
 ## Prerequisites
 
@@ -51,15 +51,15 @@ The configuration varies depending on the type of app you are deploying.
 
 [!INCLUDE [prepare-aspnetcore-windows-vm](../_shared/prepare-aspnetcore-windows-vm.md)]
 
-#### Node app
+#### Node.js app
 
 Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
 [!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
-## Define your CD release process
+## Define your CD release pipeline
 
-Your CD release process picks up the artifacts published by your CI build and then deploys them to your IIS servers.
+Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
 
 1. Do one of the following:
 
@@ -68,7 +68,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
      ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
@@ -86,7 +86,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
    ![Setting the continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
-1. Open the **Tasks** tab and select the **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
+1. Open the **Tasks** tab and select the **IIS Deployment** job. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
 
    ![IIS deployment group in release pipeline](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
@@ -94,7 +94,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 ## Create a release to deploy your app
 
-You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 

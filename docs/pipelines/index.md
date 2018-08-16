@@ -1,5 +1,5 @@
 ---
-title: CI/CD index to content for VSTS and Team Foundation Server | VSTS & TFS    
+title: CI/CD index to content for Azure Pipelines and Team Foundation Server | Azure Pipelines & TFS    
 description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI), test, and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+Azure Pipelines and Team Foundation Server help you implement a build, test, and deployment pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
 
@@ -40,7 +40,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 <div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
 <div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
 <div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
-<div class="ico48Link"><a href="apps/nodejs/build-gulp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
+<div class="ico48Link"><a href="languages/javascript.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="languages/python.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg"><span>Python</span></a></div>
 <div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div>
 <div class="ico48Link"><a href="apps/mobile/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
@@ -68,7 +68,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 ## Step-by-step tutorials
 
-* [CI builds for Git in VSTS](build/ci-build-git.md)
+* [CI builds for Git in Azure Pipelines](build/ci-build-git.md)
 * [Set up multi-stage release](release/define-multistage-release-process.md)
 
 ## Videos

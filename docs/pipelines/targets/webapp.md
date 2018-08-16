@@ -1,6 +1,6 @@
 ---
-title: Azure web app deployment | Microsoft Docs
-description: Deploy to Azure web apps from VSTS or TFS
+title: Azure Web App deployment | Microsoft Docs
+description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +13,7 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure web app deployment
+# Azure Web App deployment
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -39,7 +39,7 @@ Before you read this topic, you should understand the type of pipeline that you'
 
 ## Example
 
-If you want some sample code that works with this guidance, import (into VSTS or TFS) or fork (into GitHub) this repo:
+If you want some sample code that works with this guidance, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/adventworks/dotnetcore-sample
@@ -52,8 +52,8 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 ::: moniker range="vsts"
 
-The sample code above includes a `.vsts-ci.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
-the build to an Azure web app. Read through this to learn how to edit the YAML file in order to deploy the sample app.
+The sample code above includes a `azure-pipelines.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
+the build to an Azure Web App. Read through this to learn how to edit the YAML file in order to deploy the sample app.
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ YAML builds are not yet available on TFS.
 
 After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
 This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
-Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure web app deployment.
+Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
 ---
 
@@ -77,12 +77,12 @@ Then read through the rest of this topic to learn some of the more common change
 
 ::: moniker range="vsts"
 
-The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
+The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
 
 ### Deploy a web deploy package (ASP.NET)
 
-To deploy a .zip web deploy package (for example, from an [ASP.NET web app](../apps/aspnet/build-aspnet-4.md)) to an Azure web app,
-add the following snippet to your .vsts-ci.yml file:
+To deploy a .zip web deploy package (for example, from an [ASP.NET web app](../apps/aspnet/build-aspnet-4.md)) to an Azure Web App,
+add the following snippet to your azure-pipelines.yml file:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -116,9 +116,9 @@ For information on Azure service connections, see the [following section](#endpo
 
 ### Deploy a JavaScript Node.js app
 
-If you are building a [JavaScript Node.js app](../apps/nodejs/build-gulp.md), you publish the entire contents of your
+If you are building a [JavaScript Node.js app](../languages/javascript.md), you publish the entire contents of your
 working directory to the web app. The following snippet also generates a web.config file during deployment and starts
-iisnode handler on the Azure web app:
+iisnode handler on the Azure Web App:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -142,7 +142,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task. 
+The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** task.
 This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
 Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
 
@@ -157,13 +157,13 @@ This is where the task picks up the web package for deployment.
 ## Azure service connection
 
 The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service connection as an
-input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
+input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from VSTS to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
+You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -177,7 +177,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
+The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
 Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -197,7 +197,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker range="vsts"
 
-By default, your deployment happens to the root application in the Azure web app. You can deploy to a specific virtual application using the following:
+By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application using the following:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -215,7 +215,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-By default, your deployment happens to the root application in the Azure web app. If you want to deploy to a specific virtual application,
+By default, your deployment happens to the root application in the Azure Web App. If you want to deploy to a specific virtual application,
 type its name in the **Virtual Application** property of the **Azure App Service Deploy** task.
 
 ---
@@ -226,7 +226,7 @@ type its name in the **Virtual Application** property of the **Azure App Service
 
 ::: moniker range="vsts"
 
-You can configure the Azure web app to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
 The following example shows how to deploy to a staging slot, and then swap to a production slot.
 
@@ -256,7 +256,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-You can configure the Azure web app to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
 ---
@@ -267,14 +267,14 @@ Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to sp
 
 ::: moniker range="vsts"
 
-You can use [phases](../process/phases.md) in your YAML file to set up a pipeline of deployments.
-Using phases, you can control the order of deployment to multiple web apps.
+You can use [jobs](../process/phases.md) in your YAML file to set up a pipeline of deployments.
+Using jobs, you can control the order of deployment to multiple web apps.
 
 ```yaml
-phases:
+jobs:
 
-- phase: buildandtest
-  queue: Hosted Linux Preview
+- job: buildandtest
+  pool: Hosted Linux Preview
   steps:
 
   # add steps here to build the app
@@ -287,13 +287,13 @@ phases:
       azureSubscription: '<Test environment Azure service connection>'
       WebAppName: '<name of test environment web app>'
 
-- phase: prod
-  queue: Hosted Linux Preview
+- job: prod
+  pool: Hosted Linux Preview
   dependsOn: buildandtest
   condition: succeeded()
   steps:
 
-  # step to download the artifacts from the previous phase
+  # step to download the artifacts from the previous job
   - task: DownloadBuildArtifacts@0
     inputs:
       artifactName: drop
@@ -325,7 +325,7 @@ You may want to apply a specific configuration for your web app target before de
 This is particularly useful when you deploy the same build to multiple web apps in a pipeline.
 For example, if your **Web.config** file contains a connection string named `connectionString`,
 you can change its value before deploying to each web app. You can do this either by applying
-a web config transformation or by substituting variables in your Web.config file. 
+a web config transformation or by substituting variables in your Web.config file.
 
 # [YAML](#tab/yaml)
 
@@ -334,8 +334,8 @@ a web config transformation or by substituting variables in your Web.config file
 The following snippet shows an example of variable substitution:
 
 ```yaml
-phases:
-- phase: test
+jobs:
+- job: test
   variables:
     connectionString: <test-environment connection string>
   steps:
@@ -345,7 +345,7 @@ phases:
       WebAppName: '<name of test environment web app>'
       enableXmlVariableSubstitution: true
 
-- phase: prod
+- job: prod
   dependsOn: test
   variables:
     connectionString: <prod-environment connection string>
@@ -378,7 +378,7 @@ To change the `connectionString` using variable substitution:
 
 ## Deploying conditionally
 
-You may choose to deploy only certain builds to your Azure web app. 
+You may choose to deploy only certain builds to your Azure Web App.
 
 # [YAML](#tab/yaml)
 
@@ -386,7 +386,7 @@ You may choose to deploy only certain builds to your Azure web app.
 
 To do this in YAML, you can use one of these techniques:
 
-* Isolate the deployment steps into a separate phase, and add a condition to that phase.
+* Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
 The following example shows how to use step conditions to deploy only those builds that originate from master branch.
@@ -399,7 +399,7 @@ The following example shows how to use step conditions to deploy only those buil
     WebAppName: '<Name of web app>'
 ```
 
-To learn more about conditions, see [Specify conditions](../process/conditions.md). 
+To learn more about conditions, see [Specify conditions](../process/conditions.md).
 
 ::: moniker-end
 
