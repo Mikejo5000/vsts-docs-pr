@@ -91,9 +91,15 @@ In addition to the default and branch specific pull request templates, you can c
 - `<repository root>/docs/pull_request_template/`
 - `<repository root>/pull_request_template/`
 
-When a pull request is created, you can append any of the available pull request templates by choosing them from the pull request template drop-down. The names in the drop-down are based on the file names of the templates.
+When a pull request is created, you can append any of the available pull request templates by choosing them from the **Add a template** drop-down. The names in the drop-down are based on the file names of the templates.
 
 ![Additional pull request template](_img/pull-request-templates/additional-pull-request-template.png)
+
+In this example three templates are listed.
+
+- `**`dev.md`**` - This is the branch specific template that was applied by default to this pull request into the dev branch, as indicated by the **default** message listed after the filename.
+- `additional.md` - This is an optional template.
+- `pull_request_template.md` - This is normally the default template but it was overridden by the `dev.md` branch specific template in this pull request. Even though it was not added by default, it can still be applied by selecting it from the list.
 
 Select the name of the additional template to append its contents to the current pull request description.
 
