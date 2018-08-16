@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -29,7 +29,7 @@ To subscribe to Xamarin University, you need:
 
 * A [Microsoft Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) to use for billing. There's no cost to create an Azure subscription, which essentially is a billing account that gets charged when you buy something.
 
-	You might already have an Azure subscription if you use Azure, or you pay for Azure DevOps Services or other services through Visual Studio Marketplace. If you don't have an Azure subscription, you can [sign up for Azure](https://portal.azure.com) before or during your first Marketplace purchase. Learn more about [using Azure subscriptions to bill Marketplace purchases](#azure-billing).
+   You might already have an Azure subscription if you use Azure, or you pay for Azure DevOps Services or other services through Visual Studio Marketplace. If you don't have an Azure subscription, you can [sign up for Azure](https://portal.azure.com) before or during your first Marketplace purchase. Learn more about [how to use Azure subscriptions to bill Marketplace purchases](#azure-billing).
 
 
 <a name="buy-it"></a>
@@ -42,7 +42,7 @@ To subscribe to Xamarin University, you need:
 
    ![Choose Xamarin University](_img/xamarin/01-marketplace.png)
 
-1. On the next screen, choose **Buy**:
+1. On the next screen, select **Get**:
 
    ![Buy Xamarin University](_img/xamarin/02-xamarin-univ.png)
 
@@ -65,8 +65,8 @@ To subscribe to Xamarin University, you need:
 1. The information on the next screen explains that Xamarin University sends you a redemption code to use on the Xamarin site:
 
    ![Redemption code sent via email for the Xamarin site](_img/xamarin/07-email-notice.png)
-
-1. The email that you receive looks like this example:
+   
+   The email that you receive looks like this example:
 
    ![Example email with redemption code](_img/xamarin/08-xamarin-email.png)
 
