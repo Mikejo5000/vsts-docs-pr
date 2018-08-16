@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 #### VSTS 
 
-A good pull request description can provide guidance to pull request creators, and help reviewers be more effective when reviewing pull requests. Pull request templates can help your developers to create good pull request descriptions that meet your organization's standards.
+A good pull request description can provide guidance to pull request creators, and help reviewers be more effective when reviewing pull requests. Pull request templates can help your developers create good pull request descriptions that meet your organization's standards.
 
 This article shows you how to get started with pull request templates.
 
