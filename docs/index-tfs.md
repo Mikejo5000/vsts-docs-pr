@@ -15,13 +15,12 @@ featureFlags:
 - clicktale 
 ---
 
-
 <div id="main" class="v2">
     <div class="container">
-    <h1>Visual Studio Team Foundation Server Documentation</h1>
-    <p>Team Foundation Server, the on-premises version of [Azure DevOps Services](index.md), provides integrated tools to support collaborative software development, including Git repositories, continuous integration and deployment, and interactive Kanban boards.</p>
-
-     <ul class="pivots">
+        <h1>Visual Studio Team Foundation Server Documentation</h1>
+        <p>Team Foundation Server, the on-premises version of [Azure DevOps Services](index.md), provides integrated tools to support collaborative software development, including Git repositories, continuous integration and deployment, and interactive Kanban boards.</p>
+        <p style="height: 30px;">&nbsp;</p>
+        <ul class="pivots">
             <li>
                 <a href="#index"></a>
                 <ul id="index">
@@ -90,8 +89,8 @@ featureFlags:
                                         </a>
                                     </li>
                                 </ul>
-                <a href="#index2"></a>
-                    <h2 style="float: left; display: flex;">Applications</h2>
+                                <a href="#index2"></a>
+                                <h2 style="float: left; display: flex;">Applications</h2>
                                 <ul id="index3" class="cardsA cols cols3" style="float: left; display: flex;">
                                     <li>
                                         <a href="/vsts/index-boards">
@@ -189,8 +188,8 @@ featureFlags:
                                         </a>
                                     </li>                                    
                                 </ul>
-                        <a href="#index3"></a>
-                            <h2 style="float: left; display: flex;">Analytics and social tools</h2>
+                                <a href="#index3"></a>
+                                <h2 style="float: left; display: flex;">Analytics and social tools</h2>
                                 <ul id="index4" class="cardsA cols cols4 panelContent singlePanelContent" style="float: left; display: flex;">
                                     <li>
                                         <a href="/vsts/report/dashboards/index">
@@ -269,9 +268,9 @@ featureFlags:
                                         </a>
                                     </li>
                                 </ul>
-                        <a href="#index4"></a>
-                            <h2 style="float: left; display: flex;">Administrative tools</h2>
-                                 <ul class="cardsFTitle panelContent cols cols4">
+                                <a href="#index4"></a>
+                                <h2 style="float: left; display: flex;">Administrative tools</h2>
+                                <ul class="cardsFTitle panelContent cols cols4">
                                     <li>
                                         <a href="/tfs/server/index">
                                         <div class="cardSize">
@@ -453,7 +452,7 @@ featureFlags:
                                         </a>
                                     </li>
                                 </ul>
-                        							<a href="#index5"></a>
+                        	    <a href="#index5"></a>
                                 <ul id="index5" class="cardsW cols cols4 panelContent" style="float: left; display: flex;">
                                     <li>
                                         <div class="cardSize">
@@ -512,6 +511,7 @@ featureFlags:
                                         </div>
                                     </li>
                                 </ul>
+
                             </li>
                         </ul>
                     </li>
