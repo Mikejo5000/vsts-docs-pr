@@ -1,6 +1,6 @@
 ---
 title: Dashboards, charts, & widgets
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps Services & TFS  
 description: Review of OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps & Team Foundation Server (TFS)  
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: devops
@@ -44,7 +44,7 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
  
 ## The Analytics Service and Analytics widgets
 The Analytics Service is in preview and available to all Azure DevOps users. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
+- [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
 

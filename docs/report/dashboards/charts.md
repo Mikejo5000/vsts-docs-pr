@@ -1,6 +1,6 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps Services & TFS  
 description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics
@@ -185,7 +185,7 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker range="vsts"
 ### Widgets and the Analytics Service 
-The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md).  
+The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets.md).  
  
 ::: moniker-end
 
