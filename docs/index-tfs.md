@@ -206,7 +206,6 @@ featureFlags:
                                         </a>
                                     </li>
                                 </ul>
-                                ---
                                 <a href="#index3"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
                                 <ul id="index3" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
