@@ -1,6 +1,6 @@
 ---
 title: Add organization users for Azure DevOps Services
-description: How to add users for a Azure DevOps Services organization or project
+description: How to add users for an Azure DevOps Services organization or project
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts
@@ -66,7 +66,7 @@ To give other users access to your organization, add their email addresses.
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 

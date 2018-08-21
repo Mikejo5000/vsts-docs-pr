@@ -79,7 +79,7 @@ and confirm its location.
 
 	![Name your organization, confirm its location](_img/set-up-vs/profile-organization-details2.png)
 
-	[How can I create a Azure DevOps Services organization later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
+	[How can I create an Azure DevOps Services organization later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
 
 6.	Create your first project to store your code, 
 work items, backlog, builds, tests, and other assets. 
@@ -103,7 +103,7 @@ or change them later in Visual Studio options.
 	and your settings roam with you wherever you sign in. 
 
 8.	To view your new Azure DevOps Services organization, 
-	sign in to ```https://{yourorganization}.visualstudio.com```. 
+	sign in to ```https://dev.azure.com/{yourorganization}```. 
 
     [Having browser problems with Azure DevOps Services?](faq-set-up-vs.md#browser-problems)
 
