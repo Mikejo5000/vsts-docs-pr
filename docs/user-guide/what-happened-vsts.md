@@ -31,7 +31,7 @@ Follow the [Azure DevOps Release Notes](/vsts/release-notes/index) to get news o
 
 At this time, you can still use the old UI by choosing your profile icon and selecting **Preview features** from the drop-down menu.
 
-	> [!div class="mx-imgBorder"]  
+    > [!div class="mx-imgBorder"]  
     > ![Clicking on your profile icon to access Preview Features](_img/preview-features.png)
 
 Then, toggle the **New Navigation** option to **Off**.
