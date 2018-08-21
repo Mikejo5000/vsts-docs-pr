@@ -4,7 +4,7 @@
   items: 
   - name: Azure Boards 
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/boards/index
     items:
     - name: Boards (Kanban)
       tocHref: /vsts/

@@ -17,7 +17,7 @@ ms.date: 06/21/2018
 
 # 1. Assign work to a sprint 
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 The first step in planning your sprint is to assign work from your backlog to a sprint. 
 Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 
@@ -65,7 +65,7 @@ some or all of the items based on these estimates.
 
 
 > [!NOTE]    
-> Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/azure/devops/agile/what-is-scrum).
+> Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).
 >  
 > When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 

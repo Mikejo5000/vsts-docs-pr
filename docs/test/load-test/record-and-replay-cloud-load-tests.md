@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Record and replay cloud-based load tests
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 You can record and then replay cloud-based load tests on your web app or website directly
 using an HTTP Archive file and Azure DevOps.
 
@@ -128,7 +130,7 @@ web portal using an HTTP Archive (**.har**) file.
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], open the **+ New**
+1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.
 
    ![Selecting a HTTP archive test](_img/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)

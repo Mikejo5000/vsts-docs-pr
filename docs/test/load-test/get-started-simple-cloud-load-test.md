@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Run URL-based load tests with Azure DevOps
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 You can run a load test on your web app or site directly
 using Azure DevOps.
 
@@ -30,7 +32,7 @@ using Azure DevOps.
 
 1. Sign into Azure DevOps.
 
-1. Go to the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], open the **Load test** page, and choose **URL based test**
+1. Go to the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
    from the **+ New** menu.
 
    ![Start a new load test from the New menu](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)

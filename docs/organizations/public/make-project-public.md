@@ -1,6 +1,6 @@
 ---
 title: Make your project public or private 
-titleSuffix: VSTS Public Project 
+titleSuffix: Azure DevOps Services Public Project 
 description: Switch your project from private to public or from public to private 
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -26,8 +26,8 @@ You can easily switch a private project to a public project, and vice-versa.  Be
 
 ## Prerequisites
 
-- You must have a VSTS organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
-- As a VSTS organization owner, you can change policies and change project information. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level).
+- You must have an Azure DevOps organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
+- As an Azure DevOps organization owner, you can change policies and change project information. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level).
 
 
 ## Enable anonymous access to projects for your organization
@@ -39,9 +39,9 @@ Before you can change a private project, to a public project, you must enable an
 
 # [New navigation](#tab/new-nav)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
@@ -55,7 +55,7 @@ Before you can change a private project, to a public project, you must enable an
 
 # [Previous navigation](#tab/previous-nav)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
 0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
 
@@ -70,8 +70,6 @@ Before you can change a private project, to a public project, you must enable an
 ---
 
 ## Make a private project public 
-
-
 
 # [New navigation](#tab/new-nav)
 
@@ -116,8 +114,6 @@ Before you can change a private project, to a public project, you must enable an
 	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
 
 
-
-
 ---
 
 ## Make a public project private 
@@ -127,7 +123,7 @@ Before you can change a private project, to a public project, you must enable an
 0. Choose **Project Settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](_img/make-public-private/open-project-settings-vert-brn.png)  
+	> ![Open project settings](_img/make-public-private/open-project-settings-public-vert-brn.png)  
 
 0. Choose **Overview** page, and then **Edit** for **Privacy**.     
 
@@ -143,7 +139,6 @@ Before you can change a private project, to a public project, you must enable an
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
-
 
 
 # [Previous navigation](#tab/previous-nav)

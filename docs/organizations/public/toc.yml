@@ -30,6 +30,8 @@
     href: clone-git-repo-public.md 
   - name: View build and release pipelines 
     href: view-build-release-public.md
+  - name: Provide Stakeholders access to edit pipelines 
+    href: ../../organizations/security/provide-stakeholder-pipeline-access.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
   - name: View a project page or dashboard
     href: view-project-dashboard-public.md
   - name: View project Wikis
@@ -47,7 +49,7 @@
   - name: Feature differences for non-members
     href: feature-differences.md 
   - name: Extensions and public project support 
-    href: ../../extend/develop/public-project.md
+    href: ../../extend/develop/public-project.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Git Repositories
@@ -58,6 +60,6 @@
     href: ../projects/index.md 
   - name: Process Customization
     href: ../settings/work/customize-process.md 
-  - name: VSTS data protection overview
+  - name: Data protection overview
     href: ../../articles/team-services-security-whitepaper.md 
 

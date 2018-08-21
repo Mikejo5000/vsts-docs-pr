@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -44,7 +44,7 @@ To disconnect Azure Active Directory from your organization, you need Azure DevO
 3. Select the organization you are deleting.
 4. Choose **Disconnect AAD**. Your Azure DevOps Services organization is disconnected from your Azure subscription.
 
-  ![Screenshot of the Azure portal, with Disconnect AAD highlighted](_img/delete-organization/app_unlinkvsoorganization2.png)
+   ![Screenshot of the Azure portal, with Disconnect AAD highlighted](_img/delete-organization/app_unlinkvsoorganization2.png)
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 
@@ -53,37 +53,41 @@ To disconnect Azure Active Directory from your organization, you need Azure DevO
 To delete your Azure DevOps Services organization, you need at least Basic access and Azure DevOps Services organization owner
 permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
-### [New way to delete your organization](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
-2. Highlight the organization that you want to delete, and select the ![gear icon](../../_img/icons/gear-icon.png) > **Admin settings**.
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
 
 3. Select **Overview** > **Delete**.
 
-   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-vsts-organization/organization-overview-settings.png)
+   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
 4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
 
-   ![Screenshot of Delete Account dialog box](_img/delete-vsts-organization/delete-organization-popup.png)
+   ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
    [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 
-### [Previous way to delete your organization](#tab/previous-nav)
+# [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose the ![gear icon](../../_img/icons/gear-icon.png), and then the admin settings icon.
+2. Choose the ![gear icon](../../_img/icons/gear-icon.png), and then **Organization settings**.
 
-   ![Screenshot of Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
+   ![Screenshot of Open admin settings](../../_shared/_img/settings/open-account-settings.png)
 
 3. Select **Delete **.
 
-   ![Screenshot of Organization settings dialog box, with Delete highlighted](_img/delete-vsts-organization/organization-settings-delete.png)
+   ![Screenshot of Organization settings dialog box, with Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
 4. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 
-
+---

@@ -30,9 +30,10 @@ featureFlags:
                             <a href="/vsts/project/navigation/preview-features">Navigation basics</a><br/>
                             <a href="/vsts/release-notes/index">What's new</a></p>
                         <h3>Social tools</h3>
-                            <p><a href="/vsts/project/wiki/project-vision-status">Summary</a><br/>
+                            <p><a href="/vsts/project/wiki/project-vision-status">Project summary</a><br/>
                             <a href="/vsts/project/wiki/index">Wiki</a><br/>
                             <a href="/vsts/project/search/index">Search</a><br/>
+                            <a href="/vsts/project/navigation/set-favorites">Set favorites</a><br/>
                             <a href="/vsts/organizations/public/index">Public Projects</a></p>
                         <h3>Analytics</h3>
                             <p><a href="/vsts/report/dashboards/index">Dashboards</a><br/>
@@ -48,7 +49,7 @@ featureFlags:
                             <a href="/vsts/boards/sprints/index">Sprints (Scrum)</a><br/>
                             <a href="/vsts/boards/queries/index">Queries</a><br/>
                             <a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a><br/>
-                            <a href="/vsts/boards/plans/index">Agile at Scale</a><br/>
+                            <a href="/vsts/boards/plans/index">Plans (Agile at scale)</a><br/>
                             <a href="/vsts/project/feedback/index">Request Feedback</a></p>
                         <h3>Office integration tools</h3>
                             <p><a href="/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
@@ -64,7 +65,7 @@ featureFlags:
 </td>
 <td width="25%">
                         <h3>Continuous integration & delivery</h3>
-                            <p><a href="/vsts/pipelines/index">Build and release</a><br/>
+                            <p><a href="/vsts/pipelines/index">Build and release pipelines</a><br/>
                             <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
                             <a href="/vsts/deploy-azure/index">Deploy to Azure</a><br/>
                             <a href="/vsts/package/index">Package management</a><br/>
@@ -89,21 +90,17 @@ featureFlags:
                             <a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a><br/>
                             <a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a><br/>
                             <a href="/vsts/organizations/security/index">Security &amp; identity</a><br/>
-                            <a href="/vsts/organizations/settings/index">Manage projects</a><br/>
+                            <a href="/vsts/organizations/projects/index">Manage projects</a><br/>
                             <a href="/vsts/organizations/accounts/index">Manage organizations</a><br/>
                             <a href="/vsts/billing/index">Billing</a><br/>
                             <a href="/vsts/notifications/index">Manage notifications</a><br/>
                             <a href="/tfs/server/index">Team Foundation Server</a><br/>
                             <a href="/vsts/articles">Technical Articles</a></p>
-                        <h3>Discover & manage extensions</h3>
+                        <h3>Discover, manage, and develop extensions</h3>
                             <p><a href="/vsts/marketplace/overview">Discover extensions</a><br/>
+                            <a href="/vsts/extend/index">Develop extensions</a><br/>
                             <a href="/vsts/service-hooks/index">Service hooks</a><br/>
-                            <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
-                        <h3>Build extensions</h3>
-                            <p><a href="/vsts/extend/index">Develop extensions</a><br/>
-                            <a href="/vsts/integrate/index">Build apps</a><br/>
-                            <a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a><br/>
-                            <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
+                            <a href="/vsts/integrate/index">Integrate applications</a></p>
                         </ul>
 </td>
 </tr>
@@ -140,21 +137,23 @@ featureFlags:
                             <a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></p> </td>
 <td width="25%">
 <h3 id="devops-center">DevOps resource center</h3>
-                            <p><a href="/azure/devops/what-is-devops">What is DevOps?</a><br/>
-                            <a href="/azure/devops/git/what-is-version-control">What is version control?</a><br/>
-                            <a href="/azure/devops/git/what-is-git">What is Git?</a><br/>
-                            <a href="/azure/devops/agile/what-is-agile">What is Agile?</a><br/>
-                            <a href="/azure/devops/agile/what-is-scrum">What is Scrum?</a><br/>
-                            <a href="/azure/devops/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
-                            <a href="//azure/devops/git/git-at-scale">Git at Scale</a><br/>
-                            <a href="/azure/devops/devops-at-microsoft/">DevOps at Microsoft</a><br/>
-                            <a href="/azure/devops/events-and-talks/">Events and Talks</a></p>
+                            <p><a href="/azure/devops/learn/what-is-devops">What is DevOps?</a><br/>
+                            <a href="/azure/devops/learn/git/what-is-version-control">What is version control?</a><br/>
+                            <a href="/azure/devops/learn/git/what-is-git">What is Git?</a><br/>
+                            <a href="/azure/devops/learn/agile/what-is-agile">What is Agile?</a><br/>
+                            <a href="/azure/devops/learn/agile/what-is-scrum">What is Scrum?</a><br/>
+                            <a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
+                            <a href="//azure/devops/learn/git/git-at-scale">Git at Scale</a><br/>
+                            <a href="/azure/devops/learn/devops-at-microsoft/">DevOps at Microsoft</a><br/>
+                            <a href="/azure/devops/learn/events-and-talks/">Events and Talks</a></p>
 </td>
 <td width="25%">
-                        <h3>Command-line and other tools</h3>
-                            <p><a href="/vsts/repos/git/command-prompt">Git commands</a><br/>
+                        <h3>Developer tools</h3>
+                            <p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a><br/>
+                            <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a><br/>
+                            <a href="/vsts/repos/git/command-prompt">Git commands</a><br/>
                             <a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
-                            <a href="/cli/vsts/overview">Azure DevOps CLI</a><br/> 
+                            <a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a><br/> 
                             <a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
 </td>
 </tr>

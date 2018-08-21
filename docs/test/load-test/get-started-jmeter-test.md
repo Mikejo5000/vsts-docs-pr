@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Run Apache JMeter load tests with Azure DevOps
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 Before you start your load testing:
 
 * [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
@@ -23,7 +25,7 @@ Before you start your load testing:
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], open the **+ New**
+1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **Apache JMeter test**.
 
    ![Start a new load test from the New menu](_img/get-started-jmeter-test/JMeterLoadTestVSO-new-menu-item.png)

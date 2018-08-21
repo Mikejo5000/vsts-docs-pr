@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Run automated tests from test plans
 
+[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+
 Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]:
 
 * Provides a user-friendly process for testers who may not be well
@@ -78,9 +80,14 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
    [How do I pass parameters to my test code from a build or release pipeline?](../pipelines/test/reference-qa.md#pass-params)
 
-1. To configure the **Visual Studio Test** task and the release pipeline,
-   start by assigning meaningful names to the release pipeline and stage.
-   Then select the **Visual Studio Test** task and configure it as follows:
+1. Assign meaningful names to the release pipeline and stage as required.
+
+1. You need the Visual Studio Test Platform to be installed on the agent computer.
+   If Visual Studio is already installed on the agent computer, you can skip this step.
+   If not, you must add the [Visual Studio Test Platform Installer task](../pipelines/tasks/test/visual-studio-test-agent-deployment.md)
+   to the pipeline definition.
+
+1. Add the [Visual Studio Test task](../pipelines/tasks/test/vstest.md) to the release pipeline and configure it as follows:
  
    * Verify that version 2 of the Visual Studio Test task is selected.
      The version number is shown in the drop-down list at the top left
@@ -93,15 +100,26 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
      ![Checking the test selection method setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
 
-   * If you have UI tests that run on real browsers or thick clients,
-     set (tick) the **Test mix contains UI tests** checkbox. This is not
-     required if you are running UI tests on a headless browser. 
+   * For the **Test platform version** setting, select **Installed by Tools Installer**. 
+
+     ![Setting the installer option](_img/run-automated-tests-from-test-hub/set-installer.png) 
+
+   * If you have UI tests that run on **physical browsers** or **thick clients**,
+     ensure that the agent is set to run as an interactive process with
+     auto-logon enabled. Setting up an agent to run interactively must be
+     done before queueing the build or release (setting the **Test mix
+     contains UI tests** checkbox does not configure the agent in interactive
+     mode automatically - it is used only as a reminder to configure
+     the agent appropriately to avoid failures).
+
+   * If you are running UI tests on a **headless browser**, the interactive process
+     configuration is not required.
 
    * Select how is the test platform is provisioned, and the version of
      Visual Studio or the location of the test platform that is installed
      on the test machines 
 
-   * If your tests need input parameters such as app URLs or database
+   * If your tests need **input parameters** such as app URLs or database
      connection strings, select the relevant settings file from the
      build artifacts. You can use the **Publish build artifacts** tasks
      in you build pipeline to publish the settings file in a drop
