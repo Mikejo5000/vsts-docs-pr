@@ -136,7 +136,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
+                                                                <img src="_img/index/logo-git-mark.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
