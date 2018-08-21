@@ -30,7 +30,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <a href="#start"> </a>
                                 <h2 style="float: left; display: flex;">Get started with Team Foundation Server</h2>
-                                <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/user-guide/index">
                                         <div class="cardSize">
@@ -109,7 +109,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Applications</h2>
-                                <ul id="index2" class="cardsA cols cols3" style="float: left; display: flex;">
+                                <ul id="index2" class="cardsA panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/index-boards">
                                             <div class="cardSize">
@@ -204,11 +204,12 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </a>
-                                    </li>                                    
+                                    </li>
                                 </ul>
+                                ---
                                 <a href="#index3"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
-                                <ul id="index3" class="cardsA cols cols4 panelContent singlePanelContent" style="float: left; display: flex;">
+                                <ul id="index3" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/report/dashboards/index">
                                             <div class="cardSize">
@@ -288,7 +289,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index4"></a>
                                 <h2 style="float: left; display: flex;">Administrative tools</h2>
-                                <ul id="index4" class="cardsFTitle cols cols4" style="float: left; display: flex;">
+                                <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/tfs/server/index">
                                         <div class="cardSize">
@@ -471,7 +472,7 @@ featureFlags:
                                     </li>
                                 </ul>
                         	    <a href="#index5"></a>
-                                <ul id="index5" class="cardsW cols cols4 panelContent" style="float: left; display: flex;">
+                                <ul id="index5" class="cardsW cols cols4 panelContent singlePanelContent" style="float: left; display: flex!important;">
                                     <li>
                                         <div class="cardSize">
                                             <div class="cardPadding">
