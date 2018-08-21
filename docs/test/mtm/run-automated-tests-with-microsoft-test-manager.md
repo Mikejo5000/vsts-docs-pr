@@ -12,10 +12,9 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Run automated tests with Microsoft Test Manager
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
 ## Set up your test plan to use your build  
  
@@ -137,8 +136,8 @@ To view and update the test results:
   
 ## See Also  
 
-* [Run automated tests from test plans in the Test hub](../run-automated-tests-from-test-hub.md)
-* [Test with unified agents and phases](../../pipelines/test/set-up-continuous-test-environments-builds.md)
+* [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
+* [Test with unified agents and jobs](../../pipelines/test/set-up-continuous-test-environments-builds.md)
 * [Continuous testing scenarios and capabilities](../../pipelines/index.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

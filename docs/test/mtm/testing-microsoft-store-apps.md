@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Testing Microsoft Store apps
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
 You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:  
   

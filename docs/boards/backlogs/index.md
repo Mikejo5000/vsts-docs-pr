@@ -1,7 +1,7 @@
 ---
 title: Backlogs index to content
-titleSuffix: VSTS & TFS
-description: Index to topics for planning and tracking work in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure Boards and TFS
+description: Index to topics for planning and tracking work in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
@@ -77,9 +77,9 @@ Start planning your project by quickly adding user stories or requirements to yo
 - [Scrum](../sprints/index.md)
 - [Queries](../queries/index.md)
 - [Work item customization](../../reference/index.md)
-- [What is Agile?](/azure/devops/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
-- [Agile culture](/azure/devops/agile/agile-culture)  
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [Agile culture](/azure/devops/learn/agile/agile-culture)  
 
 
 

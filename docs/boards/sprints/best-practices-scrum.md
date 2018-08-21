@@ -1,7 +1,7 @@
 ---
 title: Sprint and scrum best practices
-titleSuffix: VSTS & TFS 
-description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS 
+description: Best practice guidance to implement scrum and use sprint tools in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
@@ -16,7 +16,7 @@ ms.date: 07/07/2018
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 
@@ -32,7 +32,7 @@ Also, setting a sprint goal as part of your planning efforts can help the team s
 After you've planned your sprint, you may want to [share the plan](share-plan.md) with key stakeholders. 
 
 You can learn more from these resources: 
-*	[What is Scrum?](/azure/devops/agile/what-is-scrum)
+*	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 *	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
 *	[The Scrum Guide](http://www.scrumguides.org/scrum-guide.html)
 *	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
@@ -192,5 +192,5 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 ## Related articles
 
-*	[What is Scrum?](/azure/devops/agile/what-is-scrum)
+*	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 *	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

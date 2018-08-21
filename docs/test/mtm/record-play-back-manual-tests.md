@@ -1,6 +1,6 @@
 ---
 title: Record and play back manual tests
-description: Record and play back manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+description: Record and play back manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.prod: devops
 ms.technology: devops-test
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Record and play back manual tests
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
 Record keystrokes and mouse actions with Microsoft Test Manager 
 while you are testing an app. You can then play back your actions 

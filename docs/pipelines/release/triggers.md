@@ -1,6 +1,6 @@
 ---
 title: Release triggers for environments, branches, and pipelines
-description: DevOps CI CD - Understand triggers in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand triggers in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
 ms.technology: devops-cicd
@@ -65,8 +65,8 @@ when a release is created by a continuous deployment trigger, based on:
 
 * **A predefined schedule**. When you select this option,
   you can select the days of the week and the time of day that
-  Release Management will automatically create a new release. You can configure multiple schedules as required.
-  Note that, with scheduled triggers, a new release is created even if a newer version of artifact is not available since the last release.
+  Release Management will automatically start a new deployment. You can configure multiple schedules as required.
+  Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
@@ -97,7 +97,7 @@ when a release is created by a continuous deployment trigger, based on:
   start a release and deployment from the release pipeline
   or from a build summary.
 
-You can combine the automated settings to have releases created
+You can combine the automated settings to have deployments created
 automatically either when a new build is available or according to
 a schedule.
 
@@ -145,7 +145,7 @@ environment triggers you configure, such as a trigger
 on successful deployment to another environment, do not
 apply. The deployment occurs irrespective of these settings.
 This gives you the ability to override the release
-process. Performing such direct deployments requires
+pipeline. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 

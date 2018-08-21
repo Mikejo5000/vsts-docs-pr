@@ -1,6 +1,6 @@
 ---
 title: Code and Work Item Search set up
-description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: devops
 ms.technology: devops-collab
@@ -12,13 +12,13 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Set up and administer Microsoft Code Search and Work Item Search
+# Set up and administer Code Search and Work Item Search
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
+[!INCLUDE [version-header](_shared/version-header.md)]
 
 In this topic:
 
-* **Configure Code Search in VSTS**
+* **Configure Code Search in Azure DevOps Services**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
 
@@ -39,16 +39,16 @@ Stakeholders do not have access to code, and therefore no access to Code Search.
 All users have access to Work Item Search.
 
 <a name="config-ts"></a>
-## Install Code Search in VSTS
+## Install Code Search in Azure DevOps Services
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in VSTS as an administrator.
-Non-administrative users can also go here to request the extension be added to VSTS. 
+to install the extension in Azure DevOps as an administrator.
+Non-administrative users can also go here to request the extension be added to Azure DevOps. 
 
 For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
 
 <a name="uninstall-ts"></a>
-## Uninstall Code Search in VSTS
+## Uninstall Code Search in Azure DevOps Services
 
 See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
 
@@ -537,7 +537,15 @@ install. This requires multiple steps, depending on whether Code Search is confi
    Do this by navigating to the **Manage Extensions** page of each collection in
    your Team Foundation Server:
 
+# [New navigation](#tab/new-nav)
+
+   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+
+---
 
 1. Remove the Search feature:
 
@@ -576,7 +584,15 @@ install. This requires multiple steps, depending on whether Code Search is confi
 1. Uninstall the Code Search extension for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in
 your Team Foundation Server.
 
+# [New navigation](#tab/new-nav)
+
+   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+
+---
 
 1. Remove the Search feature:
 
@@ -619,8 +635,6 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
-
-   ![The Code Search textbox in the VSTS title bar](_img/code-search-get-started/title-bar-search-box-empty-outlined.png)    
 
 1. If the search box is not shown, verify that the extension is installed for the collection. 
    If not, [install](#config-ts) or [configure](#config-tfs) the extension.

@@ -33,26 +33,27 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 > [!NOTE]
-> The **New navigation** feature, which provides a vertical navigation experience, is in preview for VSTS. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in this blog post, [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/). For on-premises TFS users, choose **Previous navigation** for guidance. 
+> The **New navigation** feature, which provides a vertical navigation experience, is in preview for Azure DevOps. [Go here to enable it](/vsts/project/navigation/preview-features.md). When you enable **New navigation**, you automatically enable several new Agile tool features described in thr [New Work Hubs](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/) blog post. >
+> For on-premises TFS users, choose **Previous navigation** for guidance. 
 
 # [New navigation](#tab/new-nav)
 
-(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+(1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](/vsts/boards/work-items/_img/view-add/open-work-items-agile.png)
+> ![Open Boards>Work Items, new navigation](/vsts/boards/work-items/_img/view-add/open-work-items-agile.png)
 
 # [Previous navigation](#tab/previous-nav)
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items ](/vsts/boards/work-items/_img/view-add/work-items-hub.png)
+![Boards>Work Items ](/vsts/boards/work-items/_img/view-add/work-items-hub.png)
 
 ---
 
 > [!NOTE]    
->Depending on the process chosen when the project was created&mdash;[Agile](/vsts/boards/work-items/guidance/agile-process-workflow), [Scrum](/vsts/boards/work-items/guidance/scrum-process-workflow), or [CMMI](/vsts/boards/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the project was created&mdash;[Agile](/vsts/boards/work-items/guidance/agile-process-workflow), [Scrum](/vsts/boards/work-items/guidance/scrum-process-workflow), or [CMMI](/vsts/boards/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](/vsts/boards/work-items/guidance/choose-process). 
 
@@ -64,7 +65,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	For example, here we choose User Story. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
+	> ![Boards>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
 
 	> [!TIP]    
 	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json).
@@ -88,7 +89,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 <tbody valign="top">
 <tr>
 <td>
-![Work>Work Items ](../work-items/_img/view-add/view-menu.png)
+![Boards>Work Items ](../work-items/_img/view-add/view-menu.png)
 </td>
 <td>
 <ul>

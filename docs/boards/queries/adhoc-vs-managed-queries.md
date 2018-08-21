@@ -1,31 +1,62 @@
 ---
 title: Adhoc vs managed queries
-titleSuffix: VSTS & TFS
-description: Use adhoc or built-in search/managed queries to find work items in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Use adhoc or built-in search/managed queries to find work items in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
+monikerRange: '>= tfs-2017'
 ms.date: 06/02/2017  
 ---
 
 # Adhoc vs managed work item queries
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
+
+You have two ways to perform work item searches: adhoc and managed. 
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 
 
-You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Work>Queries** page.  
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"  
+
+You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Boards>Queries** page.  
+
+Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Work Item Search box, new navigation](../../project/navigation/_img/search/work-item-search-vert.png)    
+
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2017 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+
+# [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017"   
+
+You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Work>Queries** page.  
+
+In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
-
 
 ::: moniker range="tfs-2017"
 > [!NOTE]    
 > The Work item search feature is available from TFS 2017 and later versions.     
 ::: moniker-end
+
+---
 
 >[!div class="mx-tdCol2BreakAll"]    
 > |Use adhoc queries when you want to: | Use managed queries when you want to: |
@@ -34,10 +65,6 @@ You have two ways to perform work item searches: adhoc and managed. You perform 
 
 > [!NOTE]    
 > With Work item or adhoc search, searches are performed against a full-text search engine that has indexed all work item fields.  
-
-
-## Work item search box context 
-Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Work>Queries** page. 
 
 
 ## Resources 

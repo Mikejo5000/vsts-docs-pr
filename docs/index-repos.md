@@ -1,7 +1,7 @@
 ---
-title: Collaborate on code development using Azure Repos 
+title: Azure Repos Documentation
 titleSuffix: Azure DevOps 
-description: Collaborate on software development using Azure Repos 
+description: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Repos</p>
+<p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Repos</p><br/>
         <h1>Azure Repos Documentation</h1>
 <p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p><br/>
 <table border="0" class="cardsA">
@@ -62,7 +62,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/repos/git/pull-requests">
+                                <a href="/vsts/repos/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -81,7 +81,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/repos/git/forks">
+                                <a href="/vsts/repos/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -102,7 +102,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-                                <a href="/vsts/repos/git/branch-policies">
+                                <a href="/vsts/repos/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -163,7 +163,7 @@ featureFlags:
 </td>
 </tr>
 </table>
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -171,13 +171,13 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
 </td>
 <td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
 </td>
 </tr>
 </tbody>

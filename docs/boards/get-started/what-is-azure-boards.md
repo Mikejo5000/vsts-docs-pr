@@ -17,7 +17,7 @@ ms.date: 09/05/2018
 
 Azure Boards provides a suite of interactive Agile tools with which you can plan and track work, bugs, and issues. 
 
-Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org), encompasses approaches to software development that emphasize incremental delivery, team collaboration, continual planning, and continual learning. The set of Agile tools that Azure Boards provides are designed to support teams working with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/agile/what-is-agile).
+Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org), encompasses approaches to software development that emphasize incremental delivery, team collaboration, continual planning, and continual learning. The set of Agile tools that Azure Boards provides are designed to support teams working with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/learn/agile/what-is-agile).
 
 All tools support viewing and defining work items. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier, an ID, which is unique within an account or project collection. 
 
@@ -205,22 +205,9 @@ You can also filter the cards on your taskboard to show only those cards mapped 
 
 Queries are filtered lists of work items based on criteria that you define using a query editor. You use queries to find groups of work items with something in common,to triage a set of items to prioritize or assign them, or to create status and trend charts that you can then add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
 > [!div class="mx-imgBorder"]  
 > ![Queries, Active Bugs, new navigation](_img/about-boards/queries-active-bugs-vert.png)   
-::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-![Web portal, Work>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
-
----
 
 ## Delivery plans
 

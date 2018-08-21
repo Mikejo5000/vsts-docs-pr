@@ -1,5 +1,6 @@
 ---
-title: Agile tools - Scrum, Kanban, and more | VSTS & TFS
+title: Agile tools - Scrum, Kanban, and more
+titleSuffix: Azure Boards and TFS 
 description: Use the web portal to implement your Scrum or Kanban process, plan and track work, and monitor progress and trends  
 ms.technology: devops-agile
 ms.prod: devops
@@ -12,13 +13,13 @@ ms.date: 08/15/2017
 
 # About Agile tools and Agile project management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-You access all Agile tools from **Work**. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
+You access all Agile tools from **Work**. If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-agile) for an overview.
 
-<img src="_img/plan-intro.png" alt="Work>product backlog page" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/plan-intro.png" alt="Boards>product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 Most Agile tools are [scoped to a team](../../organizations/settings/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
 
@@ -48,7 +49,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 
 ## Scrum method and tools 
-The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/agile/what-is-scrum). 
+The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum). 
 
 [![Schedule sprints](_img/overview/gs-planning-define-sprints.png)](../sprints/define-sprints.md)[![Plan a sprint](_img/overview/gs-planning-plan-sprint.png)](../sprints/assign-work-sprint.md)[![Monitor sprint progress](_img/overview/gs-planning-monitor-sprint.png)](../sprints/task-board.md)[![Forecast](_img/overview/gs-planning-forecast.png)](../sprints/forecast.md)
 
@@ -63,14 +64,14 @@ Use your Project page to view and quickly navigate to teams, projects, branches,
 
 ## Try this next  
 
-Take these tools for a test run by [signing up for a free VSTS organization](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [signing up for free](../get-started/index.md). 
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
 
 ## Related articles
 
-You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
+You access tools provided by Azure Boards and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 For an overview of all your customization options, see [Customize your work tracking experience](../../reference/customize-work.md). 
 

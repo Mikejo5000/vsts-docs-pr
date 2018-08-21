@@ -1,5 +1,5 @@
 ---
-title: Azure Boards  
+title: Azure Boards Documentation 
 titleSuffix: Azure DevOps 
 description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
 layout: HubPage 
@@ -19,9 +19,9 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Boards</p>
+<p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Boards</p><br/>
 <h1>Azure Boards Documentation</h1>
-<p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
+<p>Plan, track, and discuss work across your teams.</p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
@@ -55,7 +55,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Work items</h3>
-                                                    <p>Track code defects, issues, and the features and requirements you're developing.</p>
+                                                    <p>Track code defects and user stories, capturing discussions along the way.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Backlogs</h3>
-                                                    <p>Create and organize your backlog, track features, users stories, and
+                                                    <p>Create and organize your backlogs, track features, users stories, and
                                                         bugs.</p>
                                                 </div>
                                             </div>
@@ -134,7 +134,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Customization</h3>
-                                                    <p>Configure Agile tools and processes to meet your team's needs.</p>
+                                                    <p>Configure tools and processes to meet your team's needs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -173,8 +173,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a
-                                                        work item form.</p>
+                                                    <p>Request and capture feedback on your working apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -195,7 +194,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Settings</h3>
-                                                    <p>Configure resources for Azure DevOps Boards.</p>
+                                                    <p>Configure resources for Azure Boards.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,7 +213,7 @@ featureFlags:
 </tr>
 </table>
 
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -222,13 +221,13 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
 </td>
 <td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
 </td>
 </tr>
 </tbody>

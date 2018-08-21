@@ -1,7 +1,7 @@
 ---
-title: Agile at Scale index to content
-titleSuffix: VSTS & TFS
-description: Index to topics for how to scale Agile tools in Visual Studio Team Services & Team Foundation Server 
+title: Plans (Agile at scale)
+titleSuffix: Azure Boards and TFS
+description: Index to topics for how to scale Agile tools in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 10/04/2017
 ---
 
-# Agile at Scale  
+# Plans (Agile at scale) 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -57,6 +57,6 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 ## Resources  
 - [Scale & Configure Teams](../../organizations/settings/scale/index.md)
-- [Agile culture](/azure/devops/agile/agile-culture)  
-- [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)  
-- [Creating productive teams](/azure/devops/agile/productive-teams)    
+- [Agile culture](/azure/devops/learn/agile/agile-culture)  
+- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)  
+- [Creating productive teams](/azure/devops/learn/agile/productive-teams)    

@@ -1,6 +1,6 @@
 ---
 title: Migrate to group-based resource management
-description: Migrate Visual Studio Team Services (VSTS) to group-based resource (user) management
+description: Migrate Azure DevOps Services to group-based resource (user) management
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid:
@@ -8,42 +8,69 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/12/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
-# Migrate to group-based resource management in VSTS
+# Migrate to group-based resource management in Azure DevOps Services
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-All current users in your VSTS organization are considered to have resources via "explicit assignment" instead of implicit group assignment. If you would like to start using group-based licensing to manage licenses in your organization, you will need a migration plan to seamlessly replace existing solutions with group-based licensing.
+All current users in your Azure DevOps Services organization are considered to have resources via "explicit assignment" instead of implicit group assignment. To use group-based licensing to manage licenses in your organization, you need a migration plan to seamlessly replace existing solutions with group-based licensing.
 
-The most important thing to keep in mind is that you should avoid a situation where migrating to group-based licensing will result in users temporarily losing their currently assigned licenses. Any process that may result in removal of licenses should be avoided to eliminate the risk of users losing access to services and their data.
+The most important thing is to avoid a situation where migration to group-based licensing results in users temporarily losing their currently assigned licenses. To eliminate the risk of users losing access to services and their data, avoid any process that might result in the removal of licenses.
 
 ## Add a group rule
 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
-2. Go to the **Users** page and choose **Group rules**.
 
-   ![Choose group rules on Users page for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-3. Make sure all required users are members of the groups by highlighting a group rule and clicking **Manage members**.
+    ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
 
-   ![Highlight group rule and choose manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
+3. Go to the **Users** page. Select **Group rules**.
+
+   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)
+
+1. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
+
+   ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
    > [!NOTE]
-   > Leave any existing automation you may have (for example, PowerShell) for managing access levels or extensions for users, running as is - your goal should be to reflect the same resources which the automation is applying to those users.
+   > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
 
-4. Choose **Add a group rule** and then highlight an Azure AD group and assign the required access level, project group memberships, and extension(s).
+1. Select **Add a group rule** and then highlight an Azure Active Directory (Azure AD) group. Assign the required access level, project group memberships, and extensions.
 
-When the same access level or extension is assigned to the user both directly and through a group, only one access level or extension is consumed by the user. Therefore, no additional licenses are required to perform the migration.
+# [Previous navigation](#tab/prev-nav)
 
-## Verify group rule
+1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. Go to the **Users** page. Select **Group rules**.
 
-1. Verify that the resources have been applied to each group by highlighting a group on the Group rules tab, and then choose **Summary**.
+   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)
 
-2. Verify individual user resources by highlighting a user on the Users page, and then choose **Summary**.
+1. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
 
-3. Verify that no assignments have failed by checking to see if there are assignment errors on the Groups tab of the Users page.
+   ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
-Your group rule is in effect. We recommend that you re-evaluate rules regularly on the Group rules tab of the Users page to clarify any group membership changes in Azure AD, which could affect your organization.
+   > [!NOTE]
+   > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
+
+1. Select **Add a group rule** and then highlight an Azure Active Directory (Azure AD) group. Assign the required access level, project group memberships, and extensions.
+
+---
+
+When the same access level or extension is assigned to the user both directly and through a group, the user consumes only one access level or extension. No additional licenses are required to perform the migration.
+
+## Verify a group rule
+
+- Verify that the resources are applied to each group. On the **Group rules** tab, highlight a group and select **Summary**.
+
+- Verify individual user resources. On the **Users** page, highlight a user and select **Summary**.
+
+- Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
+
+Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization.

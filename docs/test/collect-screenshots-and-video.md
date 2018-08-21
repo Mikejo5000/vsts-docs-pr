@@ -1,6 +1,6 @@
 ---
 title: Collect screenshots, video, logs, and attachments in continuous tests
-description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
+description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Azure DevOps and TFS 
 ms.assetid: 234848A2-BDED-4DD5-8D15-AD56F6B49AD5
 ms.prod: devops
 ms.technology: devops-test
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Collect screenshots, video, logs, and attachments in continuous tests
 
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
+[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
 
 When running tests in a CI/CD pipeline, collecting diagnostic data such as
 screenshots, video, logs, and attachments is often useful to help troubleshoot failures.
@@ -48,7 +48,7 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
    }
    ``` 
 
-1. View the test results and the collected files as attachments to your test results in VSTS or TFS. 
+1. View the test results and the collected files as attachments to your test results in Azure DevOps or TFS. 
 
    ![Viewing the collected files](_img/screenshots-result.png)
 
@@ -68,7 +68,7 @@ If you are not using the **Visual Studio Test** task, you must publish attachmen
 
 * If you are running tests in the build (CI) pipeline, you can use the
   [Copy and Publish Build Artifacts](../pipelines/tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
-  These will appear in the **Artifacts** tab in your build summary. 
+  These will appear in the **Artifacts** page of your build summary. 
 
 * Use the REST APIs to publish the necessary attachments. Code samples can be found
   in [this GitHub repository](https://github.com/ManojBableshwar/VstsTestRestApiSamples/blob/master/PublishResultsFromCsvWithAttachments/PublishResultsFromCsvWithAttachments.cs). 
@@ -80,7 +80,7 @@ so the **Publish Test Results** task cannot publish attachments when these forma
 
 * [Continuous testing scenarios and capabilities](index.md)
 * [Set up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md)
-* [Test with unified agents and phases](../pipelines/test/set-up-continuous-testing-builds.md)
+* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-testing-builds.md)
 * [Pass parameters to tests from a build or release pipeline](../pipelines/test/reference-qa.md#pass-params)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Collect more diagnostic data in manual tests
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
 While you are testing your application, Microsoft Test Manager can collect data that will help diagnose any fault that you might find. If you create a bug report while you're testing, the data is automatically attached to the bug work item.  
   

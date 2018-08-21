@@ -1,7 +1,7 @@
 ---
 title: Create an Analytics view 
-titleSuffix: VSTS
-description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Visual Studio Team Services
+titleSuffix: Azure DevOps Services
+description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
@@ -14,13 +14,13 @@ ms.date: 06/30/2018
 ---
 
 
-# Create an Analytics view in Visual Studio Team Services (VSTS) 
+# Create an Analytics view in Azure DevOps 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
-You create custom views in the web portal for VSTS, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
+You create custom views in the web portal for Azure DevOps Services, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
 
 Use this article to learn how to:
 
