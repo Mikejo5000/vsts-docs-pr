@@ -88,9 +88,7 @@ None
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
                 <li>Credentials for feeds outside this organization/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
-::: moniker range="vsts"
-                <li>See the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
-::: moniker-end
+                <li>Azure Artifacts users: see the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
             </ul>
         </td>
     </tr>
@@ -273,14 +271,8 @@ None
                     <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
                     </li></ul>
                 </li>
-::: moniker range="vsts"
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
+                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
                 </li>
-::: moniker-end
-::: moniker range="<= tfs-2018"
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget).
-                </li>
-::: moniker-end
             </ul>
         </td>
     </tr>
