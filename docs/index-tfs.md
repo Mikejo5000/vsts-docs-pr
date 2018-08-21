@@ -27,10 +27,28 @@ featureFlags:
                     <li class="panelItem" data-index="0">
                         <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
-                            <li class="fullSpan">   
+                            <li class="fullSpan">
                                 <a href="#start"> </a>
                                 <h2 style="float: left; display: flex;">Get started with Team Foundation Server</h2>
                                 <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                    <li>
+                                        <a href="/vsts/user-guide/index">
+                                        <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/DevOpsSuite.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Start using TFS</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="/tfs/server/install/get-started">
                                         <div class="cardSize">
@@ -81,7 +99,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Navigation basics</h3>
-                                                    <p>Learn how to work effectively within the web portal. </p>
+                                                            <p>Learn how to work effectively within the web portal. </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -91,7 +109,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Applications</h2>
-                                <ul id="index3" class="cardsA cols cols3" style="float: left; display: flex;">
+                                <ul id="index2" class="cardsA cols cols3" style="float: left; display: flex;">
                                     <li>
                                         <a href="/vsts/index-boards">
                                             <div class="cardSize">
@@ -190,7 +208,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index3"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
-                                <ul id="index4" class="cardsA cols cols4 panelContent singlePanelContent" style="float: left; display: flex;">
+                                <ul id="index3" class="cardsA cols cols4 panelContent singlePanelContent" style="float: left; display: flex;">
                                     <li>
                                         <a href="/vsts/report/dashboards/index">
                                             <div class="cardSize">
@@ -270,7 +288,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index4"></a>
                                 <h2 style="float: left; display: flex;">Administrative tools</h2>
-                                <ul class="cardsFTitle panelContent cols cols4">
+                                <ul id="index4" class="cardsFTitle cols cols4" style="float: left; display: flex;">
                                     <li>
                                         <a href="/tfs/server/index">
                                         <div class="cardSize">
