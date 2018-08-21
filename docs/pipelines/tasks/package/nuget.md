@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2018'
 
 **Azure Pipelines | TFS 2018**
 
-![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages.
+![NuGet icon](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -88,7 +88,9 @@ None
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
                 <li>Credentials for feeds outside this organization/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
+::: moniker range="vsts"
                 <li>See the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
+::: moniker-end
             </ul>
         </td>
     </tr>
@@ -268,11 +270,17 @@ None
         <td>
             <ul>
                 <li>**This organization/collection** publishes to a Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
-                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on Azure Pipelines.
+                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
+::: moniker range="vsts"
+                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
                 </li>
+::: moniker-end
+::: moniker range="<= tfs-2018"
+                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget).
+                </li>
+::: moniker-end
             </ul>
         </td>
     </tr>
@@ -318,7 +326,13 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 </table>
 
 ## End-to-end example
+
+::: moniker range="> tfs-2018"
 You want to package and publish some projects in a C# class library to your Azure Artifacts feed.
+::: moniker-end
+::: moniker range="<= tfs-2018"
+You want to package and publish some projects in a C# class library to your TFS Package Management feed.
+::: moniker-end
 
 ```
 `-- Message
@@ -355,7 +369,13 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
 
 
-### Option 1: publish to Azure Artifacts
+::: moniker range="> tfs-2018"
+### Publish to Azure Artifacts
+::: moniker-end
+::: moniker range="<= tfs-2018"
+### Publish to a TFS feed
+::: moniker-end
+
 1. Make sure you've prepared the build as described [above](#prepare).
 2. If you haven't already, [create a feed](../../../package/feeds/create-feed.md).
 3. Add the following build steps:
@@ -399,7 +419,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     <tr>
         <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
         <td>
-            <p>Publish your packages to Azure Artifacts.</p>
+            <p>Publish your packages.</p>
             <ul>
                 <li>Command: push</li>
                 <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>
