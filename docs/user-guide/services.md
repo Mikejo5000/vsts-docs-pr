@@ -51,7 +51,7 @@ From **Dashboards** you gain access to user-configurable dashboards.
 
 ![Azure DevOps Services, main hubs](_img/dashboard-overview.png)
 
-# [Previous navigation](tab/prev-nav)
+# [Previous navigation](#tab/prev-nav)
 
 <img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" />
 
