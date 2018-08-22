@@ -12,13 +12,13 @@ ms.topic: overview
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and Release in Azure Pipelines and TFS
+# Overview of Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines is a collection of hosted DevOps services for application developers. Team Foundation Server (TFS) is the on-premises version of Azure Devops that includes Azure Pipelines and you can install and manage on your own servers. Build and release are two of the DevOps services in Azure Pipelines and TFS that help you manage continuous integration and delivery of your applications.
+Azure Pipelines is a collection of hosted DevOps services for application developers. Team Foundation Server (TFS) is the on-premises version of Azure DevOps that includes Azure Pipelines and you can install and manage on your own servers. Build and release are two of the DevOps services in Azure Pipelines and TFS that help you manage continuous integration and delivery of your applications.
 
 ![A typical release pipeline for web applications](./_img/pipeline-concept-end-to-end.png)
 
