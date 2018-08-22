@@ -245,7 +245,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-Use [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your build pipeline to publish test results along with code coverage results using istanbul.
+Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your build pipeline to publish test results along with code coverage results using istanbul.
 
 ---
 
