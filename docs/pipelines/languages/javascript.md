@@ -436,6 +436,96 @@ If you are able to build your project on your development machine, but are havin
   need to explore whether using Azure Artifacts with npm registry as an upstream source improves the reliability
   of your builds.
 
+## Customize build, test, and packaging using npm custom tasks
+
+An easy way to create custom build, test, and packaging steps that are specific to your app, such as running test code, or transpiling code and bundling, is to use npm custom tasks. These tasks work with the `scripts` element in the *package.json* file. The `scripts` element allows you to run any JavaScript file as part of your build pipeline.
+
+For example, let's say you include the following `scripts` element in your *package.json* file. In this example, when you include the **run test** command as an npm custom task, this calls the `test` entry in the `scripts` element, which runs **testscript**. Similarly, **run build** in an npm custom task runs **buildscript**.
+
+    ```json
+    "scripts": {
+      "build": "buildscript",
+      "test": "testscript"
+    },
+    ```
+
+Typically, you include npm custom tasks after the **npm install** step in your build pipeline.
+
+# [Designer](#tab/designer)
+
+### Custom task
+
+1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+
+1. In the task catalog, find and add the **npm** task.
+
+1. Select the task and, for **Command**, select **custom**.
+
+1. Specify the task, such as **run build** or **run test**
+
+    For example, the **run build** command runs the build task specified by the `scripts` element in your *package.json*.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+### Custom task
+
+To run a custom task using npm:
+
+```yaml
+steps:
+- script: npm run taskname
+```
+
+For example, you could use **npm run build** to run a build script in the *package.json* file, or **npm run test** to run a test script.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+---
+
+## Run AngularJS commands in your build pipeline
+
+For AngularJS apps, you can include Angular-specific tasks such as **ng test**, **ng build**, and **ng e2e** using npm custom tasks.
+
+Here is an example of the `scripts` element in *package.json* file for the Angular starter app. When you include **run test** as an npm custom task, this calls the `test` entry in the `scripts` element, which runs the Angular **ng test** command. Similarly, a custom **run build** task runs the **ng build** command.
+
+    ```json
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    ```
+
+For tests in your build pipeline that require a browser to run (such as the **ng test** command in the starter app that runs karma), you need to use a headless browser instead of a standard browser. An easy way to do this in the starter app is to change the  `browsers` entry in your *karma.conf.js* project file from `browsers: ['Chrome']` to `browsers: ['ChromeHeadless']`. Alternatively, you could use other tools that simulate a headless browser.
+
+## Use webpack in your build pipeline (React)
+
+You can use a webpack configuration file to specify a compiler (such as Babel or TypeScript) to transpile JSX or TypeScript to plain JavaScript, and to bundle your app. You can call the webpack configuration file from a custom npm task, as shown in previous steps.
+
+Here is an example of the `scripts` element in *package.json* for an app that uses webpack for bundling.
+
+    ```json
+    "scripts": {
+      "js": "node_modules\\.bin\\webpack app.tsx --config webpack-config.js",
+      "build": "npm run js"
+    }
+    ```
+
+In this example, the input file is *app.tsx*. The bundled output file is specified in the config file, typically *app-bundle.js*, and by default is added to a *dist* subfolder along with a sourcemap file (if one is generated).
+
+For the preceding example to work, you need to create an npm custom task that calls the **build** script, which in this example then calls the **js** task. In this example, *webpack-config.js* contains all the configuration steps required to transpile code to JavaScript and bundle your app. See the [React sample app](https://github.com/Mikejo5000/nodejs-react) TBD TBD REPLACE WITH NEW LINK for a very basic webpack configuration.
+
 ## Q&A
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
