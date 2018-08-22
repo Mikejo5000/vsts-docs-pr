@@ -27,8 +27,12 @@ Tutorials, references, and other documentation show you how to configure and man
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < vsts"
+
+[!INCLUDE [temp](_shared/concept-rename-note.md)]
+
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and delivery (CI/CD) for the app and platform of your choice.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
